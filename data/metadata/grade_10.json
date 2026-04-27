@@ -1,0 +1,177 @@
+{
+  "Math": {
+    "name": "Mathematics",
+    "necessary": true,
+    "lessons_per_week": 8,
+    "rigor": "A-Level"
+  },
+
+  "Further Math": {
+    "name": "Further Mathematics",
+    "necessary": true,
+    "lessons_per_week": 8,
+    "rigor": "A-Level"
+  },
+
+  "CS": {
+    "name": "Computer Science",
+    "necessary": true,
+    "lessons_per_week": 6,
+    "rigor": "A-Level"
+  },
+
+  "Phy": {
+    "name": "Physics",
+    "necessary": true,
+    "lessons_per_week": 6,
+    "rigor": "A-Level"
+  },
+
+  "Chem": {
+    "name": "Chemistry",
+    "necessary": true,
+    "lessons_per_week": 6,
+    "rigor": "A-Level"
+  },
+
+  "Bio": {
+    "name": "Biology",
+    "necessary": true,
+    "lessons_per_week": 6,
+    "rigor": "A-Level"
+  },
+
+  "Econ": {
+    "name": "Economics",
+    "necessary": true,
+    "lessons_per_week": 6,
+    "rigor": "A-Level"
+  },
+
+  "B": {
+    "name": "Business",
+    "necessary": true,
+    "lessons_per_week": 6,
+    "rigor": "A-Level"
+  },
+
+  "IT": {
+    "name": "Information Technology",
+    "necessary": true,
+    "lessons_per_week": 2,
+    "rigor": "A-Level"
+  },
+
+  "GP": {
+    "name": "Global Perspectives",
+    "necessary": true,
+    "lessons_per_week": 1,
+    "rigor": "A-Level"
+  },
+
+  "AP Phy": {
+    "name": "AP Physics C",
+    "necessary": true,
+    "lessons_per_week": 4,
+    "rigor": "AP"
+  },
+
+  "Calculus": {
+    "name": "AP Calculus BC",
+    "necessary": true,
+    "lessons_per_week": 4,
+    "rigor": "AP"
+  },
+
+  "AP Computer Science": {
+    "name": "AP Computer Science A",
+    "necessary": true,
+    "lessons_per_week": 4,
+    "rigor": "AP"
+  },
+
+  "AP Statistics": {
+    "name": "AP Statistics",
+    "necessary": true,
+    "lessons_per_week": 4,
+    "rigor": "AP"
+  },
+
+  "AP Economics": {
+    "name": "AP Economics",
+    "necessary": true,
+    "lessons_per_week": 4,
+    "rigor": "AP"
+  },
+
+  "ESL": {
+    "name": "English as a Second Language",
+    "necessary": true,
+    "lessons_per_week": 5,
+    "rigor": "Regular"
+  },
+
+  "Engr": {
+    "name": "Engineering",
+    "necessary": true,
+    "lessons_per_week": 2,
+    "rigor": "Regular"
+  },
+
+  "Kaz Hist": {
+    "name": "Kazakh History",
+    "necessary": true,
+    "lessons_per_week": 2,
+    "rigor": "Regular"
+  },
+
+  "KazLit": {
+    "name": "Kazakh Literature",
+    "necessary": true,
+    "lessons_per_week": 2,
+    "rigor": "Regular"
+  },
+
+  "Kaz": {
+    "name": "Kazakh Language",
+    "necessary": true,
+    "lessons_per_week": 1,
+    "rigor": "Regular"
+  },
+
+  "Kaz L&L": {
+    "name": "Kazakh Language and Literature",
+    "necessary": true,
+    "lessons_per_week": 2,
+    "rigor": "Regular"
+  },
+
+  "Rus L&L": {
+    "name": "Russian Language and Literature",
+    "necessary": true,
+    "lessons_per_week": 2,
+    "rigor": "Regular"
+  },
+
+  "RuLit": {
+    "necessary": true,
+    "lessons_per_week": 2,
+    "rigor": "Regular"
+  },
+
+  "Rus": {
+    "name": "Russian Language",
+    "necessary": true,
+    "lessons_per_week": 1,
+    "rigor": "Regular"
+  },
+
+  "CCircle": {
+    "necessary": false
+  },
+
+  "PE": {
+    "necessary": false
+  }
+
+}

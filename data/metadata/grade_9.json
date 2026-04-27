@@ -1,0 +1,137 @@
+{
+    "Math": {
+        "name": "Mathematics",
+        "necessary": true,
+        "lessons_per_week": 8,
+        "rigor": "Regular"
+    },
+
+    "Phy": {
+        "name": "Physics",
+        "necessary": true,
+        "lessons_per_week": 5,
+        "rigor": "Honors"
+    },
+
+    "Chem": {
+        "name": "Chemistry",
+        "necessary": true,
+        "lessons_per_week": 3,
+        "rigor": "Regular"
+    },
+
+    "Bio": {
+        "name": "Biology",
+        "necessary": true,
+        "lessons_per_week": 2,
+        "rigor": "Regular"
+    },
+
+    "ESL": {
+        "name": "English as a Second Language",
+        "necessary": true,
+        "lessons_per_week": 5,
+        "rigor": "Regular"
+    },
+
+    "Engr": {
+        "name": "Engineering",
+        "necessary": true,
+        "lessons_per_week": 2,
+        "rigor": "Regular"
+    },
+
+    "IT": {
+        "name": "Information Technology",
+        "necessary": true,
+        "lessons_per_week": 2,
+        "rigor": "Regular"
+    },
+
+    "Global Perspectives": {
+        "name": "Global Perspectives",
+        "necessary": true,
+        "lessons_per_week": 1,
+        "rigor": "A-Level"
+    },
+
+    "Wo Hist": {
+        "name": "World History",
+        "necessary": true,
+        "lessons_per_week": 1,
+        "rigor": "Regular"
+    },
+
+    "Kaz Hist": {
+        "name": "Kazakh History",
+        "necessary": true,
+        "lessons_per_week": 2,
+        "rigor": "Regular"
+    },
+
+    "Geo": {
+        "name": "Geography",
+        "necessary": true,
+        "lessons_per_week": 1,
+        "rigor": "Regular"
+    },
+
+    "Rus": {
+        "name": "Russian Language",
+        "necessary": true,
+        "lessons_per_week": 1,
+        "rigor": "Regular"
+    },
+
+    "RuLit": {
+        "name": "Russian Literature",
+        "necessary": true,
+        "lessons_per_week": 2,
+        "rigor": "Regular"
+    },
+
+    "KazLit": {
+        "name": "Kazakh Literature",
+        "necessary": true,
+        "lessons_per_week": 2,
+        "rigor": "Regular"
+    },
+    
+    "Kaz": {
+        "name": "Kazakh Language",
+        "necessary": true,
+        "lessons_per_week": 1,
+        "rigor": "Regular"
+    },
+
+    "Kaz L&L": {
+        "name": "Kazakh Language and Literature",
+        "necessary": true,
+        "lessons_per_week": 3,
+        "rigor": "Regular"
+    },
+
+    "Rus L&L": {
+        "name": "Russian Language and Literature",
+        "necessary": true,
+        "lessons_per_week": 3,
+        "rigor": "Regular"
+    },
+
+    "CCircle": {
+        "necessary": false
+    },
+
+    "PE": {
+        "necessary": false
+    },
+
+
+
+    "CS": {
+        "name": "Computer Science Principles",
+        "necessary": true,
+        "lessons_per_week": 3,
+        "rigor": "AP"
+    }
+}

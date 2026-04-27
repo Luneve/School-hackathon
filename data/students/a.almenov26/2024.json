@@ -1,0 +1,2012 @@
+{
+    "semester-1": {
+        "available": true,
+        "grades": {
+            "Engr": [
+                {
+                    "title": "Overview for the Microcontrollers",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lesson activity ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lesson activity Kinematics",
+                    "category_id": null,
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Summative assessment: Spatial Transformations",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Spatial Transformations: Translational and Rotational motions",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 20.0
+                },
+                {
+                    "title": "SOR 2 Forward and Inverse kinematics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 76.5
+                },
+                {
+                    "title": "Final Project Presentation",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 58.0
+                },
+                {
+                    "title": "Code and Presentation for Final Project",
+                    "category_id": "3",
+                    "importance": 0.5,
+                    "percent": 75.0
+                }
+            ],
+            "Phy": [
+                {
+                    "title": "CW Displacement Equation",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA Errors and uncertainties",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW1.1 Errors and Uncertainties",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "SAU1 Physical Units and Measurements",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 55.0
+                },
+                {
+                    "title": "HW2.1 Displacement, average speed and velocity",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lab Acceleration of connected masses",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "HW2.2 Projectile Motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lab Projectile motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Midterm 1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "SAU2 Kinematics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Lab Electric circuit",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW3.3 Vector components, Forces",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.91
+                },
+                {
+                    "title": "SAU3 Dynamics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "HW4.1 Moments",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU4 Forces Density Pressure",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW2.3 Using equations of motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "HW3.4 Momentum and Exam style questions",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Lab Acceleration of connected masses",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW3.1 Force, mass, acceleration",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW3.2 Non-uniform motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 46.15
+                },
+                {
+                    "title": "HW4.2 Density and Pressure",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW3.4 Momentum and Exam style questions",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.62
+                },
+                {
+                    "title": "HW2.3 Using equations of motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW3.2 Non-uniform motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU5 Work Energy Power",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW1.1 Errors and Uncertainties",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Final I",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 80.0
+                }
+            ],
+            "Chem": [
+                {
+                    "title": "Baseline Assessment ",
+                    "category_id": "1",
+                    "importance": 2.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "Electron Configuration Practice Worksheet ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.45
+                },
+                {
+                    "title": "Periodic trends ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "Formulas",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 97.14
+                },
+                {
+                    "title": "Empirical and molecular formulae",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Unit 1,2 - Atomic sctucture and stoichiometry",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 92.86
+                },
+                {
+                    "title": "Midterm 1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 68.75
+                },
+                {
+                    "title": "Lab report -  Gravimetric Analysis",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Ideal Gas Law calculations ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "The gaseous state ideal and real gases and pV = nRT",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 88.0
+                },
+                {
+                    "title": "States of matter and Chemical energetics ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 88.0
+                },
+                {
+                    "title": "Redox MCQ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 63.16
+                },
+                {
+                    "title": "Redox and 1/2 equations ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.65
+                },
+                {
+                    "title": "Bonding and structure",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 97.14
+                },
+                {
+                    "title": "Chemical equilibrium ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Electro-chemistry, Equilibria ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Final 1",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 65.0
+                },
+                {
+                    "title": "Homework ",
+                    "category_id": "1",
+                    "importance": 3.0,
+                    "percent": 80.0
+                }
+            ],
+            "RuLit": [
+                {
+                    "title": "Золотой век",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Выступление. Правила. ",
+                    "category_id": null,
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Евгений Онегин. Письма",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Лишние люди",
+                    "category_id": "2",
+                    "importance": 0.5,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Midterm 1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 92.59
+                },
+                {
+                    "title": "Предисловие к роману \"Герой нашего времени\"",
+                    "category_id": "1",
+                    "importance": 0.5,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Final 1",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "\"Герой нашего времени и современный герой\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ],
+            "CS": [
+                {
+                    "title": "convert numbers",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "compression quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 94.0
+                },
+                {
+                    "title": "SA no. 1, data representation",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "hardware quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "logic curcuits",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA no.2, hardware",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.65
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 73.33
+                },
+                {
+                    "title": "F-D-E poster",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "bit manipulation quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "SA No. 3, processor",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 92.86
+                },
+                {
+                    "title": "SA No.4, research project",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 90.91
+                }
+            ],
+            "Kaz Hist": [
+                {
+                    "title": "ФО-2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-3",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 71.43
+                },
+                {
+                    "title": "ФО-4",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-5",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР-1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "Midterm-1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 66.67
+                },
+                {
+                    "title": "ФО-8",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-6",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "ФО-7",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.71
+                },
+                {
+                    "title": "СОР-2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 73.33
+                },
+                {
+                    "title": "ФО-9",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Final-1",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 80.0
+                }
+            ],
+            "GP": [
+                {
+                    "title": "APA citation style",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Skill focus: source analysis",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Source Analysis ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Exam Preparation Component 1 ",
+                    "category_id": null,
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Research Project Defense",
+                    "category_id": null,
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Exam Component 2 Essay ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ],
+            "Math": [
+                {
+                    "title": "10Мс.01 - know the definition and methods of specifying a function;  10Мс.02 - be able to perform transformations of the graph of a function (parallel transfer, compression and stretching)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Мс.04- be able to determine the properties of a function; 10Мс.05 - be able to describe its properties from the given graph of a function: ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Mc.06 - identify the properties of a fractional linear function",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Mc.03 - know the peculiarity of the location of graphs of mutually inverse functions;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10At.06- be able to solve the simplest trigonometric equations;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 56.52
+                },
+                {
+                    "title": "10At.01 Know the definitions, properties of trigonometric functions, and be able to graph them;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "10At.02 Use sin-1 x, cos-1 x, tan-1 x  to denote basic inverse trigonometric ratios",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10At.03 - Know the definitions, properties, and graphs of arcsine, arccosine, arctangent, and arctotangent and be able to find their values; 10At.04 - perform conversions of expressions containing inverse trigonometric functions;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 93.33
+                },
+                {
+                    "title": "10At.05 - be able to solve simple equations containing inverse trigonometric functions;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 88.24
+                },
+                {
+                    "title": "Trigonometric equations and inequalities ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "Function, its properties and graph ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "10At.07 - be able to solve trigonometric equations by decomposition into multipliers; using trigonometric formulas; reduced to a quadratic equation; using formulae for decreasing the degree of trigonometric functions; by the method of introducing an auxiliary argument; by universal substitution",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "Midterm 1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 92.5
+                },
+                {
+                    "title": "Trigonometric equations and inequalities ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Calculate and interpret measures of spread (variation) in data, such as variance, standard deviation, to analyze the variability and dispersion of data.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Understand the principles of constructing stem-and-leaf diagrams, construct them for a set of data, analyze data presented in the form of a stem-and-leaf diagram, and apply this knowledge to solve practical problems.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Construct and interpret histograms to visualize the distribution of data and analyze its shape, central tendency, and spread.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 150.0
+                },
+                {
+                    "title": "Use quartiles to calculate measures of central tendency and spread, and construct and interpret box and whisker plots to visualize and compare distributions of grouped data.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Construct and interpret cumulative frequency curves to analyze the distribution of data and determine the percentage of observations falling below a given value",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "10Aa.01 - Know the definition of a polynomial with several variables and reduce it to standard form, determine the degree of a polynomial of standard form;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Aa.08 - apply Bezout's theorem and its corollaries to solve problems;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО4",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "Exploring data. Representing and interpreting data ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "10Aa.07 - long division of a polynomial by a polynomial",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Polynomials",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Final 1",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 97.5
+                },
+                {
+                    "title": "Exponential and logarithmic functions",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 75.0
+                }
+            ],
+            "Rus": [
+                {
+                    "title": "Монолог мое любимое произведение",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Говорение. Толерантность",
+                    "category_id": "2",
+                    "importance": 0.5,
+                    "percent": 92.86
+                },
+                {
+                    "title": "\"Физика и природа\" Презентация флэш-карт специальной лексики.",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Употребление глаголов с абстрактным значением",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 93.33
+                },
+                {
+                    "title": "Final 1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 88.0
+                }
+            ],
+            "Kaz L&L": [
+                {
+                    "title": "Үй жұмысы. Ұлттық өнім",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "1-БЖБ. Кәсіп",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "Сынып жұмысы. Мәтін",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "ФО. Оқылым",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 50.0
+                },
+                {
+                    "title": "Midterm. Аралық бақылау",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Үй жұмысы. Әнші",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "БЖБ. Мазмұндама",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 84.38
+                },
+                {
+                    "title": "БЖБ Экология",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 88.0
+                },
+                {
+                    "title": "Қорытынды бақылау (final)",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 76.67
+                }
+            ],
+            "ESL": [
+                {
+                    "title": "RWU2-Reading 1 Vocabulary",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Lesson Participation",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 40.0
+                },
+                {
+                    "title": "RWU1-Reading 1 Vocabulary 1-2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "RWU1-Reading 1-2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Lesson Participation",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "RWU1-Summative Assessment 1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "LSU1 - Vocabulary",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "LSU1 - Listening",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "LSU1-Summative Assessment 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 73.33
+                },
+                {
+                    "title": "R&W Unit 2 Reading 1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "RWU2 Vocabulary 2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "RWU1 - Reading 2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lesson Participation",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "Group work IELS vocab",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "LSU1-Summative Assessment 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 88.89
+                },
+                {
+                    "title": "Midterm Semester 1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 78.79
+                },
+                {
+                    "title": "Final Semester 1",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 83.02
+                }
+            ],
+            "B": [
+                {
+                    "title": "фо 1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "фо 2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "фо 4",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "сор 1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "фо 5",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "фо 6",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "сор 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "фо 7",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "фо 8",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "фо 9",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ],
+            "English": [
+                {
+                    "title": "SOR",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 88.33
+                },
+                {
+                    "title": "Final exam",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 72.73
+                }
+            ]
+        }
+    },
+    "semester-2": {
+        "available": true,
+        "grades": {
+            "Math": [
+                {
+                    "title": "10Mc.17 - Know the definitions of increment of an argument and increment of a function; 10Mc.19 - Find the derivatives of a constant function and a stepped function;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "10Mc.20 - Know the definition of differential of a function and the geometric meaning of differential; 10Mc.21 - find the differential of a function;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Mc.22 - know and apply the rules of differentiation;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "10Mc.23 - find the derivative of a composite function;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 71.43
+                },
+                {
+                    "title": "Calculus I. Differentiation",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "10Mc.26 apply differentiation to gradients, tangents and normals, increasing and decreasing functions, and rates of change ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sc.01 - Distinguish between the concepts of: \"permutations\", \"Arrangements\" and \"combinations\" without repetitions and with repetitions; 10Sc.02 - Apply formulas to calculate permutations, combinations, placements without repetitions; 10Sc.03 - apply formulas for calculating permutations, combinations, placements with repetitions; 10Sc.04 - solve probability problems using combinatorial formulas; 10Sc.05 apply Newton's Binomial to approximate calculations (with natural exponent); 10Aa.10 use the expansion (1 + x)n , where n is a rational number and |x|<1.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.01 - Know the concept of a random event, types of random events, and examples of random events;  10Sp.02 - calculate the probability of random events by applying the properties of probability;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.05 calculate and use conditional probabilities in simple cases; 10Sp.03 - understand and apply the rules of probability addition * P(A + B) = P(A) + P(B) * P(A +B) = P(A) + P(B) - P(A ∙ B);",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Probability, Permutations and Combinations",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Definite integral",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Calculus I. Integration",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "10Ms.33 understand integration as the process inverse of differentiation;  10Ms.34 know the definition of the prime function and the indefinite integral;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "10Ms.40 Know and apply the formula for calculating the volume of a body of revolution using the definite integral; 10Ms.41 know the definition of a curvilinear trapezoid and apply the Newton-Leibniz formula to find its area;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10.4.1.26 - Know the necessary and sufficient condition of increasing (decreasing) of a function on an interval; 10.4.1.27 - find the intervals of increasing (decreasing) of a function;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Mc.27 find critical points and determine their nature, and use information about critical points when graphing;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Mc.29 - Know the definition of the inflection point of the graph of a function and the necessary and sufficient condition for the upward (downward) convexity of the graph of a function on an interval;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "MidTerm2",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Curvilinear trapezoid and its area. ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Applications of the Derivative ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 94.44
+                },
+                {
+                    "title": "10Mc.31 - Investigate the properties of a function using the derivative and plot its graph;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.10 - Understand what a random variable is and give examples of random variables;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.11 - Know the definition of discrete and continuous random variable and be able to distinguish between them;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.12 - produce a table of the law of distribution of some discrete random variables;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.13 - Know the concept of the mathematical expectation of a discrete random variable and its properties;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.14 - calculate the mathematical expectation of a discrete random variable;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.15 - calculate the variance and standard deviation of a discrete random variable;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Discrete random variables ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 86.36
+                },
+                {
+                    "title": "10Sp.18 draw up a probability distribution table relating to a given situation involving a discrete random variable X, and calculate E(X) and Var(X)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "10Sp.19 use probability formulae for binomial and geometric distributions and recognise practical situations where these distributions are appropriate models;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Sp.17 recognise types of distribution of discrete random variables: binomial distribution, normal distribution, geometric distribution.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Gv.01 - Know the definitions of vector in space, vector length, equal vectors; 10Gv.02 - Perform addition of vectors and multiplication of a vector by a number; 10Gv.03 - Know the definitions of  collinear and coplanar vectors in space;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Gv.05 - Know the definition of a rectangular coordinate system in space and be able to represent it; 10Gv.06- represent a point in space by its coordinates in a rectangular coordinate system;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Gv.11 - Know the concept of vector coordinates, be able to find the coordinates of a vector by decomposing it into unit vectors;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Gv.13- Perform addition, vectors, and multiplication of a vector by a number in coordinates; ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Gv.07 - Be able to find the distance between two points in space; 10Gv.12 - Be able to find the coordinates and length of a vector in space;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Gv.04 - Know the definition and properties of the scalar product of vectors in space; 10Gv.16 - Know the formula for the scalar product of vectors in coordinate form and apply it to problem solving; 10Gv.17 - Calculate the angle between two vectors in space; 10Gv.18 - Know and apply the condition of perpendicularity of vectors in space;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Gv.19 - derive the general equation of the plane (ax+by+cz+d = 0) through the normal vector and a point lying on that plane;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "10Gv.20 - Construct the canonical equation of a straight line;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Rectangular coordinate system and vectors in space",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Final2",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 87.5
+                }
+            ],
+            "RuLit": [
+                {
+                    "title": "Литературный процесс второй половины 19 века",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Тестовые вопросы по \"Преступлению и наказанию\" Ф.Достоевского",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Буктрейлер к произведению М.Достоевского \"Преступление и наказание\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Использование цитат в письменных работах",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Герои романа-эпопеи \"Война и мир\"",
+                    "category_id": "2",
+                    "importance": 0.5,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 82.86
+                }
+            ],
+            "Chem": [
+                {
+                    "title": "Nomenclature worksheet ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 97.5
+                },
+                {
+                    "title": "Shapes of organic molecules",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 81.25
+                },
+                {
+                    "title": "An introduction to AS Level organic chemistry",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 82.5
+                },
+                {
+                    "title": "Isomerism",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Alkanes test",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Hydrocarbons ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Reactions of halogenoalkanes 1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm ",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 72.5
+                },
+                {
+                    "title": "Organic reaction mechanisms - FRQ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Organic reaction mechanisms - Test",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Aldehydes and Ketones - Test ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 72.73
+                },
+                {
+                    "title": "Lab",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 77.78
+                },
+                {
+                    "title": "Aldehydes and Ketones Part 1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "Hydroxy compounds - Carboxylic acids ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Lab - rate of reaction",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Final 2",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 84.29
+                },
+                {
+                    "title": "Lab report - Rate of reaction",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Homework",
+                    "category_id": "1",
+                    "importance": 3.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Born-Haber cycles",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.0
+                }
+            ],
+            "CS": [
+                {
+                    "title": "quiz codehs 3-5 unit",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 96.0
+                },
+                {
+                    "title": "function quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA No. 1, python basics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 92.86
+                },
+                {
+                    "title": "string quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "SA No. 2, programming 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 91.67
+                },
+                {
+                    "title": "file i/o quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "HTML quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 100.0
+                }
+            ],
+            "Phy": [
+                {
+                    "title": "HW6.1 Young Modulus",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU6 Deformations",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU7 Wave",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "HW7.1 Wave Motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lab 9702/34/O/N/23",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "SAU8 Superposition",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 64.71
+                },
+                {
+                    "title": "Lab 9702/36/O/N/23",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "Lab 9702/35/O/N/23",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 73.33
+                },
+                {
+                    "title": "Midterm 2",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 82.5
+                },
+                {
+                    "title": "FA Resistivity",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "FA Practical Circuits and Kirchhoff's law",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 20.0
+                },
+                {
+                    "title": "SAU9 DC Circuits",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "SAU10 Particel physics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 77.78
+                },
+                {
+                    "title": "Final II",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 60.53
+                },
+                {
+                    "title": "HW8.1 Stationary Waves",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA Practical Circuits and Kirchhoff's law",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lab 9702/34/O/N/23",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA Resistivity",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lab 9702/36/O/N/23",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lab 9702/35/O/N/23",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ],
+            "ESL": [
+                {
+                    "title": "Formative assessment Vocabulary Reading 2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Homework ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Homework - Slogan and exercises",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Reading and Writing Unit 3 Reading 2 Quantifiers",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.71
+                },
+                {
+                    "title": "LS U3 L1V",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Listening and Speaking Unit 3 - FA Vocab2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 91.67
+                },
+                {
+                    "title": "Reading & Writing Unit 4 Reading 1 Vocabulary",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Reading & Writing Unit 4 Reading 1 Restating",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "Summative Assessment 1 - Reading & Writing Unit 3",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.48
+                },
+                {
+                    "title": "Formative assessment",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Summative Assessment 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 74.51
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 94.74
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 94.0
+                }
+            ],
+            "Engr": [
+                {
+                    "title": "OnShape: Project Set 1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 99.17
+                },
+                {
+                    "title": "CAD Exam #1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Home work on assembly",
+                    "category_id": null,
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "IMU 2 четверть",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm presentation of projects (Onshape)",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 96.0
+                },
+                {
+                    "title": "OnShape Project Set 2 and 3",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 99.0
+                },
+                {
+                    "title": "PWM lesson 7 \"heartbeat\". Artisan Education platform. ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Final Assesment",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 88.53
+                }
+            ],
+            "Kaz Hist": [
+                {
+                    "title": "ФО-2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.91
+                },
+                {
+                    "title": "ФО-3",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-4",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 93.75
+                },
+                {
+                    "title": "ФО-5",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "CОР-1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "Midterm-2",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "ФО-7",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-8",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-10",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.71
+                },
+                {
+                    "title": "СОР-2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 93.33
+                },
+                {
+                    "title": "Final-2",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "ФО-9",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-12",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО-6",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ],
+            "Rus": [
+                {
+                    "title": "Цифровые технологий",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Интервью. \"Цифровые технологий\"",
+                    "category_id": "2",
+                    "importance": 0.5,
+                    "percent": 93.75
+                },
+                {
+                    "title": "Создание собственного аватара на основе биотехнологий",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 97.14
+                },
+                {
+                    "title": "Мировые проблемы энергетики",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Цитаты",
+                    "category_id": "1",
+                    "importance": 0.5,
+                    "percent": 50.0
+                },
+                {
+                    "title": "Электроэнергетика Республики Казахстан",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 85.71
+                }
+            ],
+            "GP": [
+                {
+                    "title": "Research Presentations - Case studies ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Homework for February 10:1. Read an article about the roles people play in social change https://www.opendemocracy.net/en/transformation/what-role-were-you-born-to-play-in-social-change/2. Choose a role (or two roles) that you play in your community (school, family, friends circle etc.)3. Justify your answer in 200-250 words essay, where you need to use direct quotes from the article using Quote Sandwich method. Quotes from the article do not go into word count. No make-up assignments, bring your essays to the class. If you are absent send it via EduPage. If not, then 0 for assessment. ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Homework for February 24:- Prepare your research proposalsThis task cannot have extended deadlines, so please, submit it on time! This is your semester project. Those who were absent today please carefully read the presentation slides and have your proposals ready for the lesson. I won't accept an excuse of you being absent. ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Song Analysis",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                }
+            ],
+            "Kaz L&L": [
+                {
+                    "title": "Тележоба",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "1-БЖБ. Сауда",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "2–БЖБ. БАҚ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 73.33
+                },
+                {
+                    "title": "сынып жұмысы. БАҚ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Жаңа сөздер",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "Сұхбат",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 91.67
+                },
+                {
+                    "title": "Аралық бақылау (Midterm)",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "3–БЖБ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 72.5
+                },
+                {
+                    "title": "Айтылым",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "Эссе. Дұрыс тамақтану",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Қарсылықсы салилась құрмалас",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Қорытынды бақылау",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 86.15
+                }
+            ],
+            "B": [
+                {
+                    "title": "FA 1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 4",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 5",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 6",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 7",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 8",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 9",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ]
+        }
+    }
+}

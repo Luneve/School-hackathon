@@ -1,0 +1,1688 @@
+{
+    "semester-1": {
+        "available": true,
+        "grades": {
+            "CS": [
+                {
+                    "title": "FA1: conversion between number systems binary, denary, hexadecimal",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "FA2: floating point number conversion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "SA1: data representation",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 93.75
+                },
+                {
+                    "title": "FA3: Describe the characteristics of a LAN and a WAN. Explain whether a given network is a LAN or a WAN.  Describe the characteristics, benefits and drawbacks, of different network topologies.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA4: Describe the TCP/IP protocol suite. Describe the purpose of the protocols HTTP, FTP, POP3, IMAP, SMTP, BitTorrent.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "FA6: Explain the difference between primary and secondary storage. Identify items that are stored in secondary storage. Explain the difference(s) between RAM and ROM. Explain the difference(s) between SRAM and DRAM. Explain the difference(s) between PROM, EPROM and",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "SA2: networking and internet technologies",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA7: Use the NOT, AND, OR, NAND, NOR and XOR logic gate symbols Understand and define the functions of : NOT, AND, OR, NAND, NOR and XOR (EOR) gates Construct the truth table for each of the logic gates Construct a logic circuit Construct a truth table Construct a logic expression",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "FA9: Explain why a computer system requires an Operating System (OS). Explain the key management tasks carried out by the Operating System",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "SA3: processor fundamentals",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "SA4: AI",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 72.73
+                },
+                {
+                    "title": "FA11: Select and use appropriate data types for a problem solution.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 85.0
+                }
+            ],
+            "Math": [
+                {
+                    "title": "FA1. Use formulas to calculate the probabilities of the distribution Pо",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA2. know the definition of a power function with a real exponent; graph a power function with a real exponent depending on the exponent;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA3. Know the definition of the nth degree root and the arithmetic root of the n-th degree;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA4. Apply the properties of a rational exponent to transform algebraic expressions;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "F5. Understand how to sum independent Poisson r.v.’s. Apply Poisson properties to probabilities for sums of independent processes.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Degrees and roots. Degree function ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "FA1. Recognise polyhedra (prism, pyramid, regular polyhedra) and their types",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "FA3 calculate the surfaces of a cylinder, cone, truncated cone;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "The Poisson distribution ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Polyhedrons and solids of rotation ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 92.5
+                },
+                {
+                    "title": "11Mc.20 Know the definition of the exponential function and graph it; 11Mc.21 apply the properties of the exponential function when solving problems;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Mc.22 Know the definitions of the logarithm of a number, decimal and natural logarithms;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Mc.23   Know the properties of logarithms and apply them to transform logarithmic expressions;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Sp.19 Calculate and interpret measures of location and spread for CRVs;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Mc.26 Know and apply the properties of the logarithmic function;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Mc.36 Apply the product rule and the quotient rule to find derivatives of complex functions consisting of the product or quotient of two functions.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "11Mc.37 Apply the rules of differentiation to find derivatives of functions containing natural logarithms and exponentials",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "11Sp.21 Calculate expected values for functions of X; apply linearity of expectation",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Calculate indefinite and definite integrals involving combinations of exponential functions, natural logarithm functions, and trigonometric functions",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Exponential and logarithmic functions ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Calculus II - Differentiation",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Continuous random variables. Linear combinations of random variables. ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 72.0
+                },
+                {
+                    "title": "Calculus II - Integration",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 97.5
+                }
+            ],
+            "ESL": [
+                {
+                    "title": "FA 1 (persuasive speech)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 4- writing (impact on the planet)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "SA1- Unit 1 ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 89.23
+                },
+                {
+                    "title": "FA 3- Natural world",
+                    "category_id": "1",
+                    "importance": 2.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Speaking: Can support agruments with evidence",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Can argue on contraversial topics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "Can write a descriptive evaluaiton of a picture",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Can write a descriptive essay and understand main idea in the text",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 92.0
+                },
+                {
+                    "title": "Can use contrasting linking words in comparing two objects. ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Can analyse narrative essays and write a narrative including its main elements.",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.19
+                },
+                {
+                    "title": "Can present ideas about global citizenship and making difference",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Can recognize ideas about global citizenship; use inversion",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 76.19
+                },
+                {
+                    "title": "Can discuss issues and topics related to global citizenship and express their opinion in essay",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 84.21
+                }
+            ],
+            "Kaz Hist": [
+                {
+                    "title": "11.1.1.2 определять особенности кочевого скотоводства и земледелия, используя понятия «системы жизнеобеспечения», «система расселения», «экосистема»; ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 93.33
+                },
+                {
+                    "title": "11.1.2.1 исследовать направления и трассы Великого Шелкового пути на территории Казахстана, используя карту; 11.1.2.2 анализировать роль Великого Шелкового пути в возникновении и развитии городов Казахстана ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.65
+                },
+                {
+                    "title": "11.1.3.3 анализировать этапы развития экономики Казахстана в ХХ веке",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "11.1.3.2 анализировать факторы, определившие направления социально-экономического Казахстана в ХХ веке.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "СОР-1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 82.35
+                },
+                {
+                    "title": "Midterm-1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "11.2.2.3 оценивать казахстанскую модель межэтнического, межконфессионального согласия на основе изучения государственных стратегий и программ ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "СОР-2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 82.35
+                },
+                {
+                    "title": "Исследовательская работа",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11.1.1.4 характеризировать развитие ремесла и промыслов у казахов на основе этнографических материалов ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "11.1.2.3 характеризовать взаимодействие оседлого и кочевого населения в система торгово-экономических отношений; - исследовать культурное взаимовлияние оседлого и кочевого населения на основе источников.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11.2.2.3 оценивать казахстанскую модель межэтнического, межконфессионального согласия на основе изучения государственных стратегий и программ ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.71
+                }
+            ],
+            "Rus": [
+                {
+                    "title": "ФО № 1 Цель:•\tпонимать содержание текста; определять тему, основную мысль, авторскую позицию",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "СОР № 1за раздел \"Экология: нефтяная и ядерная промышленность\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "ФО № 2 Цель: умение распознавать причастные и деепричастные обороты в предложении и правильно расставлять знаки препинания при них, опираясь на знание правил и анализ структуры предложения.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "СОР № 2 за раздел \"Бизнес-идея из науки: математика, химия\". ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 83.33
+                }
+            ],
+            "Kaz L&L": [
+                {
+                    "title": "Әлеуметтік зерттеуге шолу",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Театр",
+                    "category_id": "1",
+                    "importance": 2.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "АЭС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "БЖБ 1. Әлеуметтік мәселе",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 77.14
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 61.54
+                },
+                {
+                    "title": "Шешендік өнер",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Жаңа сөздер. Театр",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 1.0
+                },
+                {
+                    "title": "Жаңа сөздер. Тіл",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "БЖБ3. Театр",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Қазақ би-шешендерінің нақыл сөздері",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "Эссе. Театрға бару мәдениеті",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 86.0
+                }
+            ],
+            "Phy": [
+                {
+                    "title": "SAU1 Circular Motion",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 94.12
+                },
+                {
+                    "title": "FA Circular Motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "FA Gravitational Law and Field strange ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA Gravitation Potential ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "SAU2 Gravitational Fields",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "LAB Thermal physics",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.91
+                },
+                {
+                    "title": "SAU3 Thermal physics and ideal gases",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm 1",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 82.5
+                },
+                {
+                    "title": "FA Describing oscillations",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU Oscillations",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 65.0
+                },
+                {
+                    "title": "LAB",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "SAU Electric Fields",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "LAB",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "SAU Capacitance ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 36.84
+                },
+                {
+                    "title": "LAB 1",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 92.5
+                }
+            ],
+            "RuLit": [
+                {
+                    "title": "ФО №1 определять тематику и проблематику произведения, опираясь на художественные особенности текста, выражая мнение об их актуальности и аргументируя свою позицию. (Ответ на проблемный вопрос)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "ФО № 2 (карта ) Цель: •\tпознакомится с биографией и творчеством А.А. Блока (16.09.)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "СОР № 1 (рассказы М. Шолохова)",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.59
+                },
+                {
+                    "title": "ФО № 4 Цель: умение раскрывать эмоциональное содержание и символику стихотворения (составление мудборда 07.10)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "ФО № 3 выявить уровень понимания   темы, идеи и настроения произведения, умение анализировать художественные образы и выразительные средства",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "MIDTERM",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 72.0
+                },
+                {
+                    "title": "СОР № 2 (поэзия серебряного века)",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 93.75
+                },
+                {
+                    "title": "ФО № 6 умение создавать собственное высказывание на основе прочитанного ( Работа со статьей \"Трагедия и достоинство: Анна Ахматова в зеркале времени\")",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "ФО № 7 Цель: развивая умение работать с биографическим материалом, интерпретировать авторскую позицию и создавать собственный связный, выразительный текст.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "ФО № 8 Цель: проверить знание биографии Анны Ахматовой и понимание идей поэмы «Реквием», а также умение устанавливать связь между текстом и судьбой автора.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "СОР № 3 за раздел \"Человек в эпоху тоталитарного режима\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "ФО № 9 Цель:  умение выделять и описывать основные этапы судьбы персонажа, устанавливать причинно-следственные связи между событиями его жизни и авторской позицией. (А. Рыбаков \"Дети арбата\")",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "СОР №4 за раздел \"Человек в эпоху тоталитарного режима\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "ФО № 2 (карта ) Цель: •\tпознакомится с биографией и творчеством А.А. Блока (16.09.)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 80.0
+                }
+            ],
+            "Engr": [
+                {
+                    "title": "FA 1. Presentation of Engineering Fields",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "FA 2. Breadboarding. Arduino+Distance sensor",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 3. Building circuits",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ],
+            "IT": [
+                {
+                    "title": "FA 2: Identify and compare methods of delivering TEL.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA 1: IT in Society",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 40.62
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 97.37
+                },
+                {
+                    "title": "FA3: design a neural network in spreadsheets/mathematical modeling programs using a ready-made algorithm;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "FA4: Describe the purpose of network components (nodes, routers, switches);",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA5: Describe the role of different components in a computer network and how they contribute to network functionality.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA3: Communication Technology",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA2: New and Emerging Technologies",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA6: Explain the purpose and representation of IP (Internet Protocol) addresses;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 91.11
+                }
+            ],
+            "AP Phy": [
+                {
+                    "title": "Motion in 2D",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Representing Motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Displacement Velocity Acceleration",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "SAU Kinematics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Circular Motion",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Spring Forces",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Drag Forces",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "SAU Forces (Unit 2 MCQ)",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Systems and Center of mass",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Free-body diagrams",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Newton's second law",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 0.0
+                }
+            ],
+            "GP": [
+                {
+                    "title": "TOPIC",
+                    "category_id": null,
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA1 _identify and analyse arguments, evidence and perspectives",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "FA2. To be able to reflect on the importance of referencing and how it supports academic honesty and research quality",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "FA 3 To be able to reflect on their project  using Reflective cycle ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                }
+            ]
+        }
+    },
+    "semester-2": {
+        "available": true,
+        "grades": {
+            "Math": [
+                {
+                    "title": "11Nc.01 – Define a complex number as an ordered pair (x, y) or in the form x + iy. 11No.01 – Add, subtract, multiply, and divide complex numbers in Cartesian form",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "11Ae.01 Know the definition of an irrational equation; determine its range of acceptable values 11Ae.02 Solve irrational equations by raising both sides of the equation to the n-th power.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Ae.06 Know and apply methods for solving demonstrative equations;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Complex number",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Equations and inequalities",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "11Nc.07 – Find the nth roots of a complex number. 11No.02 – Find the complex conjugate and use it to divide complex numbers.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Nc.07 – Find the nth roots of a complex number. 11No.02 – Find the complex conjugate and use it to divide complex numbers.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Sa.10 Identify and apply appropriate sampling methods depending on context",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11No.05 – State and use De Moivre’s theorem for integer powers of complex numbers. 11No.06 – Use De Moivre’s theorem to derive multiple-angle trigonometric identities",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Ae.02 be able to solve irrational equations by raising both parts of the equation to the nth degree; 11Ae.03 be able to solve irrational equations using the method of variable substitution;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Ae.11 be able to solve logarithmic inequalities and their systems;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Mc.33 use the initial condition to find a partial solution",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "11Gm.14 Знать формулу для нахождения объема цилиндра и применять ее для решения задач;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "MidTerm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "11Mc.32 Solve differential equations with separable variables;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Gm.12 Know the formula for finding the volume of a prism and apply it to problem solving;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11Gm.16 Знать формулы для нахождения объёма шара и его частей и применять их для решения задач;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Differential equations ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                }
+            ],
+            "Engr": [
+                {
+                    "title": "FA1. Printing to PiBody display. Cosmic travel project. (1-4 lessons+Practice 1)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "FA2. Using loops in Micropython. 1 level, (3 practice+4,5 lessons)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA3. Working with sound in Raspberry Pi Pico (6, 7 lessons, 2 practices Melody maker, Counting Beeps)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA4. Manipulating with sound using Pico. Level 3. Lesson 8-9",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Summative Assessment",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA5. Manipulating with sound using Pico. Level 3. Lesson 10-11",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA6. Practicing PWM on light control: lvl 3, Glowing Lantern, Melody machine, Light Rythm Mixer",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Mid Term",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 95.83
+                },
+                {
+                    "title": "FA7. Project planning. Research. ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                }
+            ],
+            "Phy": [
+                {
+                    "title": "FA ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU Magnetic fields ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 28.3 Faraday’s law ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 2_28.3 Faraday’s law",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.59
+                },
+                {
+                    "title": "FA Understanding the terms used for alternating current and power",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA 29.2 The transformer",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "SAU AC",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 78.95
+                },
+                {
+                    "title": "FA De Broglie ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA Exam-style 30",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 92.5
+                },
+                {
+                    "title": "SAU Quantum Physics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "FA Nuclear Physics 31.3",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Mass Defect & Nuclear Binding Energy",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 88.24
+                }
+            ],
+            "ESL": [
+                {
+                    "title": "FA 1 identify specific information in the listening part and demonstrate understanding of vocabulary",
+                    "category_id": null,
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA 1: listening (identify specific information in the extended talk) and speaking (talk on the given topic supporting with the examples)",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "FA 3: Identify True-False sentences and complete the table with missing information based on the text about teen inventors",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA 2: reading ( match the words from the text with their meaning, identify true-false statements) and writing ( write a proposal based on the situation from the text)",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 93.75
+                },
+                {
+                    "title": "SA3: listening (match the activities with their benefits) and writing (based on the given scenario, produce 4 paragraphed piece of writing)",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 92.86
+                },
+                {
+                    "title": "FA5: Write the word for the given definition on the topic \"Ideas\" and complete the sentence with the suitable word",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 64.29
+                },
+                {
+                    "title": "FA6: Demonstrate understanding of advanced questions (tag, indirect polite, indirect opinion, negative and echo questions) and apply adjectives with endings -ful\\-less accurately",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "SA4: grammar (advanced question types and subordinate clauses) and reading ( multiple choice and open ended questions)",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.95
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 86.96
+                }
+            ],
+            "Kaz L&L": [
+                {
+                    "title": "ҚБ. Туризм. Клуб ашу",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Қазақ қоғамындағы гендерлік ерекшелік",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "ҚБ. Айтылым: Бурабайға тур ұйымдастыру",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "БЖБ. Туризм",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 77.14
+                },
+                {
+                    "title": "БЖБ. Гендер",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 77.42
+                },
+                {
+                    "title": "Жоба. Рефлексия",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 91.25
+                }
+            ],
+            "Rus": [
+                {
+                    "title": "ФО №1 умение писать аргументативное эссе на заданную тему (Проблемы современной молодежи)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "ФО № 2  умение корректировать и редактировать все имеющиеся недочеты в тексте, учитывая цель, целевую аудиторию, ситуацию общения и воздействие на читателя",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР № 3 за раздел \"Экономика и ее роль в обществе. Синтаксис и пунктуация\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.0
+                }
+            ],
+            "CS": [
+                {
+                    "title": "FA3: know string methods and iterate by string",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA4: know list; use list methods; traversing list",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA6: Use algorithms like linear and binary search, sroting list. Explain complexity of each algorithm and compare it",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA7: SQL. Know query methods, data filtering and creating",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 92.0
+                },
+                {
+                    "title": "FA8: Know SQLite command. Integrate python and SQL",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA9: Know basic flask command, design simple website structure",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "FA10: Collect data to seek problem and solution (google forms)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                }
+            ],
+            "Kaz Hist": [
+                {
+                    "title": "11.3.1.3 определять общественно-политические идеи исторических деятелей Казахского ханства;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 66.67
+                },
+                {
+                    "title": "11.3.1.5 проанализировать общественно-политическую деятельность казахских просветителей XIX века",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "11.3.1.1 определять общественно-политические идеи исторических личностей древнего и средневекового Казахстана;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11.3.3.2 определять значимость консолидирующих ценностей идеи «Мәңгілік Ел»;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 91.67
+                },
+                {
+                    "title": "11.3.2.1 определять исторические основы национальной идеи «Алаш»",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 88.89
+                },
+                {
+                    "title": "Исследовательская работа",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "11.3.1.2 оценивать вклад исторических деятелей в развитии общественно-политической мысли Казахстана",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "CОР-3",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "11.4.2.3 определять изменения и преемственность в развитии образовательных учреждений на территории Казахстана в в XIX – начале ХХ века;",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 46.67
+                },
+                {
+                    "title": "11.4.1.2 исследовать вклад ученых средневекового Казахстана в развитие научных знаний",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 92.0
+                },
+                {
+                    "title": "11.4.2.2 оценивать вклад исследователей XVIII – начале ХХ века в развитии науки Казахстана на основе изучения их трудов ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 87.5
+                }
+            ],
+            "RuLit": [
+                {
+                    "title": "ФО № 3 понимание содержания художественного произведения и его роль в литературном процессе",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "СОР № 5 за раздел \"Война в судьбах людей\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "ФО № 1 Характеристика героев произведения \"Сотников\" (Сотников и Рыбак)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "СОР № 6 за раздел \"Человек и война в литературе 20 века\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "ФО № 2 умение характеризовать героев произведения, определяя их роль в раскрытии идейно-тематического замысла произведения (\"А зори здесь тихие\")",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО № 4",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО № 5 умение определять тематику и проблематику произведения, опираясь на художественные особенности текста, выражая мнение об их актуальности и аргументируя свою позицию (цитаты из произведения \"Василий Теркин\")",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "ФО № 6 Цель: характеристика персонажей произведения (\"Утиная охота\")",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "СОР № 7 за раздел \"Нравственный выбор\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 77.78
+                },
+                {
+                    "title": "MIDTERM",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 64.0
+                }
+            ],
+            "AP Phy": [
+                {
+                    "title": "FA Rotational Kinetic Energy",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Torque and Work",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "FA Angular Momentum",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "SAU Rotational Dynamics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 0.0
+                }
+            ],
+            "GP": [
+                {
+                    "title": "FA1 _To be able to create a well-structured survey for research purposes",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                }
+            ],
+            "CCircle": [
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 50.0
+                },
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "CC",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "СС",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 50.0
+                }
+            ],
+            "IT": [
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA1. Programming for the Web",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA1: Use HTML tags when developing web pages. Task 1-5",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA2: Use CSS selectors when developing web pages. Task 6-10",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA3: Use JS scripts when developing web pages. Task 1-7",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "FA4: Transform and clean data to extract meaningful information.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA5: Transform and clean data to extract meaningful information. Part 2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,2006 @@
+{
+    "semester-1": {
+        "available": true,
+        "grades": {
+            "Bio": [
+                {
+                    "title": "FA: making a dichotomous key ",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA characteristics and classification of living things ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 81.25
+                },
+                {
+                    "title": "SA 1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 92.86
+                },
+                {
+                    "title": "FA cell analogy ",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA molds lab",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 98.15
+                },
+                {
+                    "title": "Midterm ",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 88.0
+                },
+                {
+                    "title": "Biomolecules: Oral FA",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "FA carbs and lipids lab",
+                    "category_id": "1",
+                    "importance": 0.25,
+                    "percent": 100.0
+                },
+                {
+                    "title": "DNA model",
+                    "category_id": "1",
+                    "importance": 2.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU 3",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.38
+                },
+                {
+                    "title": "FA Enzymatic activity",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 56.25
+                },
+                {
+                    "title": "Final Exam",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 88.33
+                }
+            ],
+            "Kaz L&L": [
+                {
+                    "title": "Диалог ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "Қаламыздағы жекеменшік мектептерді салыстыру",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Бөлшектік сан есім",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Сыйлық сыйлау",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "1-БЖБ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Аралық бақылау (mid-term)",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 84.0
+                },
+                {
+                    "title": "Сынып жұмысы",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "2-БЖБ ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 88.89
+                },
+                {
+                    "title": "3-БЖБ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "4-БЖБ. Саятшы Ораз",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 93.75
+                },
+                {
+                    "title": "Қорытынды бақылау",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 77.14
+                }
+            ],
+            "CS": [
+                {
+                    "title": "binary numbers",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "binary numbers",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "binary numbers quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 94.0
+                },
+                {
+                    "title": "print.py",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР №1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "basic math task ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "sep, end quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "СОР №2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "and, or, not",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "nested conditions",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Nested conditions quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "For loop",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "СОР №3",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Final project",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ],
+            "ESL": [
+                {
+                    "title": "FA_Gr_Voc_U1",
+                    "category_id": "1",
+                    "importance": null,
+                    "percent": 70.0
+                },
+                {
+                    "title": "SA_U1",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 73.33
+                },
+                {
+                    "title": "FA_Voc_Gr_U 2",
+                    "category_id": "1",
+                    "importance": null,
+                    "percent": 84.85
+                },
+                {
+                    "title": "Writing _ U2",
+                    "category_id": "1",
+                    "importance": null,
+                    "percent": 80.0
+                },
+                {
+                    "title": "SA_U2",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 62.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": null,
+                    "percent": 53.33
+                },
+                {
+                    "title": "FA_Unit 4",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "SA_Unit 4",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 60.53
+                },
+                {
+                    "title": "FA_CrossW_U5",
+                    "category_id": "1",
+                    "importance": null,
+                    "percent": 87.5
+                },
+                {
+                    "title": "FA _ Gerund_Infinitive_U5",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": null,
+                    "percent": 70.0
+                }
+            ],
+            "Phy": [
+                {
+                    "title": "FA Unit 5.1/5.2 ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "Initial Test ",
+                    "category_id": "1",
+                    "importance": null,
+                    "percent": 90.0
+                },
+                {
+                    "title": "FA Unit 5.1 Kinetic theory",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "FA 5.2 Expanding ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.71
+                },
+                {
+                    "title": "5.4 Conduction",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 53.85
+                },
+                {
+                    "title": "FA 5.6 Radiation",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Lab",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "FA heat transfer ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "SAU-1 Thermal physics",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 94.44
+                },
+                {
+                    "title": "LAB-2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "SAU-2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "5.5 Convection",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "FA ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "SAU-3 Electric field",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "LAB magnetism ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "FA 21.1 Magnet & Magnetic field ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "LAB magnetic field lines ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU-4 Magnets",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 77.5
+                }
+            ],
+            "Chem": [
+                {
+                    "title": "States of matter ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 93.33
+                },
+                {
+                    "title": "Summative Assessment",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Elements",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Summative Assessment ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 92.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 95.38
+                },
+                {
+                    "title": "FA",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Chemical bonds",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Lab work Types of chemical reactions",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "ChSA",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ChSA Reacting masses and chemical equations ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 76.67
+                },
+                {
+                    "title": "Final exam ",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 75.71
+                }
+            ],
+            "Wo Hist": [
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР 1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.71
+                },
+                {
+                    "title": "СОР 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 85.71
+                },
+                {
+                    "title": "СОР 3",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 71.43
+                },
+                {
+                    "title": "СОР 4",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 78.57
+                }
+            ],
+            "Kaz Hist": [
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР 1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 71.43
+                },
+                {
+                    "title": "Mid-term  exam",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 91.67
+                },
+                {
+                    "title": "ФО: Движение Алаш",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "ФО: Образование КазАССР",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Final exam",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "СОР 2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 77.78
+                }
+            ],
+            "Engr": [
+                {
+                    "title": "Pulleys lab",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Summative assessment for the \"Simple machines\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 91.67
+                },
+                {
+                    "title": "Суммативное оценивание за раздел \"Изготовление прототипа машины\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 71.43
+                },
+                {
+                    "title": "Simple acceleration quizzes in really hard engineering",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Water rocket ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ],
+            "Geo": [
+                {
+                    "title": "ФО-объекты Казахстана",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО: Тематические карты.Загрузите ответы из тетради - можно сделать фотографию.",
+                    "category_id": "1",
+                    "importance": 0.5,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР-1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР-2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР-3",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 91.67
+                },
+                {
+                    "title": "СОР-4",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 88.89
+                }
+            ],
+            "Math": [
+                {
+                    "title": "Действительные числа.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Корень. Свойства арифметического квадратного корня.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Функция , ее график и свойства",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Преобразования выражений, содержащих квадратные корни",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Вынесение множителя за знак корня. Внесение множителя под знак корня.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Иррациональность в знаменателе дроби",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Преобразование выражений, содержащих квадратные корни.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Область допустимых значений",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Квадратные корни и иррациональные выражения ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 86.67
+                },
+                {
+                    "title": "Определение квадратного уравнения. ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Виды квадратного уравнения",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Формула корней квадратного уравнения",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Теорема Виета ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Квадратный трехчлен",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Разложение квадратного трехчлена на множители",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Решение квадратных уравнений, содержащих знак модуля",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Квадратные уравнения ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 58.33
+                },
+                {
+                    "title": "MidTerm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 74.29
+                },
+                {
+                    "title": "Решение дробно–рациональных уравнений",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Решение уравнений, приводимых к виду квадратного уравнения",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Решение задач с помощью квадратных уравнений",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Решение задач с помощью дробно-рациональных уравнений",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Решение текстовых задач",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 66.67
+                },
+                {
+                    "title": "Преобразование графика квадратичной функции",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Квадратичная функция и ее график",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Преобразования графиков функций",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Преобразование графиков функций, содержащих модуль",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Преобразования графиков функций с использованием ПО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "График функции y=(ax+b)/(cx+d)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Построение графика дробно- линейной функции с модулями",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Составление математической модели по условию задачи и ее решение",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 72.5
+                }
+            ],
+            "Geom": [
+                {
+                    "title": "выводить формулы суммы внутренних углов и суммы внешних углов многоугольника",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "знать определение параллелограмма",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "выводить и применять свойства параллелограмма",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "выводить и применять признаки параллелограмма",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "знать определения прямоугольника, ромба и квадрата, выводить их свойства и признаки",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "знать и применять теорему Фалеса",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Доказывать и применять свойства биссектрисы треугольника",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Знать определение, виды и свойства трапеции. ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "доказывать и применять свойство средней линии трапеции",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Многоугольники. Исследование четырехугольника",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "MidTerm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 68.18
+                },
+                {
+                    "title": "Вписанные и описанные треугольники",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Центральные и вписанные углы",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Вписанные и описанные четырехугольники",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Вписанные и описанные четырехугольники ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 81.25
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 95.0
+                }
+            ],
+            "Rus": [
+                {
+                    "title": "Упражнение 26",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "СОР 1 раздел ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "Спорт ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Midterm ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 66.0
+                },
+                {
+                    "title": "Мир профессий",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Цитатный план",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Выбор профессии. Зачин",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "СОР 2 раздел ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Земля, поклонись Человеку",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Final exam",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 80.95
+                }
+            ],
+            "RuLit": [
+                {
+                    "title": "Реализм",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "СОР 1 раздел ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 66.67
+                }
+            ]
+        }
+    },
+    "semester-2": {
+        "available": true,
+        "grades": {
+            "CS": [
+                {
+                    "title": "Developing algorithm quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SA №1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 82.5
+                },
+                {
+                    "title": "List methods",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "String and list quiz",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 86.36
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "AP exam preparation",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Final project",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 93.33
+                }
+            ],
+            "Bio": [
+                {
+                    "title": "Photosynthesis & Leaf structure",
+                    "category_id": "1",
+                    "importance": 0.5,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Intellectual Game",
+                    "category_id": "1",
+                    "importance": 0.5,
+                    "percent": 75.0
+                },
+                {
+                    "title": "SAU 5",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "Unit 7 Revision",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU 6",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 59.43
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Unit 9 Revision ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 40.0
+                },
+                {
+                    "title": "SAU 7",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.37
+                },
+                {
+                    "title": "Final exam ",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 58.33
+                },
+                {
+                    "title": "SAU 8 Poster Presentation",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.0
+                }
+            ],
+            "Geom": [
+                {
+                    "title": "Тригонометрические функции углов от 0° до 180°. Формулы приведения",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "Основные тригонометрические тождества",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Решение прямоугольных треугольников",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Нахождение значения тригонометрической функции по данному значению одного из них ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Решение прямоугольных треугольников2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Тригонометрия",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 77.78
+                },
+                {
+                    "title": "Площадь параллелограмма, ромба",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Площадь трапеции",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Свойства площади",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Площадь треугольника",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 77.78
+                },
+                {
+                    "title": "Площади фигур",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Площади фигур",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 63.64
+                },
+                {
+                    "title": "MidTerm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "Расстояние между двумя точками.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Координаты середины отрезка",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Координаты точки, делящей отрезок в заданном отношении",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Уравнение окружности",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Прямоугольная система координат",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Определение подобных треугольников",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Определение подобных треугольников",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Подобие треугольников",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Final Exam",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 95.0
+                }
+            ],
+            "Phy": [
+                {
+                    "title": "FA Current",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "HW",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "LAB",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "SAU-1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "LAB-2",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "LAB-3",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "Parallel Connection",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "LAB-4",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 50.0
+                },
+                {
+                    "title": "SAU-2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 93.33
+                },
+                {
+                    "title": "LAB-5",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "LAB-6",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "SAU-3",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 54.55
+                },
+                {
+                    "title": "MID-term ",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "SAU-4 \"light phenomena\"",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "SAU-5 Optical fiber",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 69.23
+                },
+                {
+                    "title": "LAB lenses",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "LAB F, D",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "SAU 6 Electromagnetic Spectrum",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "LAB",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 66.25
+                }
+            ],
+            "Rus": [
+                {
+                    "title": "Рассказ из 6 слов",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Вводные слова",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 81.82
+                },
+                {
+                    "title": "Публичная речь-обращение ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 75.0
+                },
+                {
+                    "title": "Публичная речь-обращение ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Final exam",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "СОР Вводные слова",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 66.67
+                }
+            ],
+            "ESL": [
+                {
+                    "title": "FA_gr_voc_U 6",
+                    "category_id": "1",
+                    "importance": null,
+                    "percent": 65.38
+                },
+                {
+                    "title": "FA _ Conditionals (0,1,2)",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 93.33
+                },
+                {
+                    "title": "SA_U 6",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 80.0
+                },
+                {
+                    "title": "FA_Passive Voice",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "FA_have/get+smth+done",
+                    "category_id": "1",
+                    "importance": null,
+                    "percent": 71.43
+                },
+                {
+                    "title": "SA_Unit 7",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 62.86
+                },
+                {
+                    "title": "FA_RepSpe_Voc",
+                    "category_id": "1",
+                    "importance": null,
+                    "percent": 31.25
+                },
+                {
+                    "title": "SA_Unit 8",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 76.0
+                },
+                {
+                    "title": "Mid-term",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 66.92
+                },
+                {
+                    "title": "FA_Gr_Voc_U 9",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "SA_Unit 9",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 73.33
+                },
+                {
+                    "title": "SA_Unit 10",
+                    "category_id": "2",
+                    "importance": null,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Final",
+                    "category_id": "3",
+                    "importance": null,
+                    "percent": 65.0
+                }
+            ],
+            "Chem": [
+                {
+                    "title": "Solution",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Solution",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Solution",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "The concentration of a solution",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Oxidation and Reduction",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Solution volume",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Mid-term exam ",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 67.27
+                },
+                {
+                    "title": "Redox reactions",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 88.0
+                },
+                {
+                    "title": "Redox reactions",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 72.5
+                },
+                {
+                    "title": "The principles of electrolysis",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 40.0
+                },
+                {
+                    "title": "Electrolysis",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Reactions involving gases",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 65.0
+                },
+                {
+                    "title": "Calculations from equations",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Chapter Summative Assessment # 1 - 5 unit (solutions)",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Final Exam",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 66.67
+                }
+            ],
+            "Engr": [
+                {
+                    "title": "Project Pres",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 84.0
+                },
+                {
+                    "title": "Goldberg",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Smart house",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 36.0
+                }
+            ],
+            "Math": [
+                {
+                    "title": "Радианная мера угла. Единичная окружность.",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Тригонометрические функции и их свойства",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Формулы приведения",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Тригонометрия",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 55.0
+                },
+                {
+                    "title": "Решение квадратных неравенств",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Решение рациональных, дробно-рациональных неравенств. Метод интервалов",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Решение систем неравенств",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Решение неравенств и систем неравенств, содержащих модуль",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Неравенства",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.83
+                },
+                {
+                    "title": "MidTerm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 87.5
+                },
+                {
+                    "title": "Интервальная таблица частот",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Гистограмма частот",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Дисперсия, стандартное отклонение",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Накопленная частота",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Анализ статистических таблиц и диаграмм",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Элементы статистики ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 73.33
+                },
+                {
+                    "title": "Основные правила комбинаторики",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Размещения, перестановки, сочетания без повторений",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "Вероятность события",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 90.0
+                },
+                {
+                    "title": "Комбинаторика и элементы теории вероятности",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 95.0
+                },
+                {
+                    "title": "Final Exam",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 82.5
+                }
+            ],
+            "Wo Hist": [
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "СОР №5",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 71.43
+                },
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "СОР №6",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 71.43
+                },
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "СОР №7",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 71.43
+                },
+                {
+                    "title": "СОР №8",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 78.57
+                }
+            ],
+            "RuLit": [
+                {
+                    "title": "Капитанская дочка",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "Работа в группах ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Пушкин",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Рассказ биографии Чехова ",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Трейлер",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 85.0
+                },
+                {
+                    "title": "Тест-викторина",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Шукшин. Деревенская проза",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 0.0
+                },
+                {
+                    "title": "СОР Сатира и юмор",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                }
+            ],
+            "Kaz L&L": [
+                {
+                    "title": "1-БЖБ Алаш",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Аралық бақылау (midterm)",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 68.33
+                },
+                {
+                    "title": "Тура және ауыспалы мағына",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "2-БЖБ ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 83.33
+                },
+                {
+                    "title": "3-БЖБ ",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 88.89
+                },
+                {
+                    "title": "Қорытынды бақылау (final)",
+                    "category_id": "3",
+                    "importance": 2.0,
+                    "percent": 62.67
+                }
+            ],
+            "Kaz Hist": [
+                {
+                    "title": "Тоталитаризм в Казахстане",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 60.0
+                },
+                {
+                    "title": "ФО",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Midterm",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 50.0
+                },
+                {
+                    "title": "Эссе",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 80.0
+                },
+                {
+                    "title": "Развитие казахского искусства в 20-30-е годы XX века",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "СОР",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 70.0
+                },
+                {
+                    "title": "Final Exam",
+                    "category_id": "3",
+                    "importance": 1.0,
+                    "percent": 70.0
+                }
+            ],
+            "Geo": [
+                {
+                    "title": "СОР 3- Экономическая география",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР-1",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "СОР-2",
+                    "category_id": "2",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО - Органический мир океанов",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО - Природные зоны",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                },
+                {
+                    "title": "ФО Перепись населения",
+                    "category_id": "1",
+                    "importance": 1.0,
+                    "percent": 100.0
+                }
+            ]
+        }
+    }
+}
