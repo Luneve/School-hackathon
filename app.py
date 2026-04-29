@@ -1,4 +1,3 @@
-import io
 import os
 
 from flask import (
@@ -9,7 +8,6 @@ from flask import (
     url_for,
     session,
     flash,
-    send_file,
     Response,
 )
 from src.edu_api import login as edupage_login
@@ -20,6 +18,7 @@ from main import (
     load_dotenv_file,
     add_predicted_grade_single,
     get_full_dashboard_data,
+    get_analytics_data,
 )
 from src.cache import (
     load_student_cache,
@@ -27,14 +26,12 @@ from src.cache import (
     delete_manual_grade,
     get_manual_grades,
     get_last_synced_at,
-    get_subject_meta_dict,
-    upsert_subject_meta,
-    delete_subject_meta,
     upsert_external_year_gpa,
     delete_external_year_gpa,
     get_external_year_gpas,
     get_sync_logs,
 )
+from src.timetable import set_manual_lpw, delete_manual_lpw
 from src.calculator import (
     calculate_annual_percent,
     calculate_subject_gpa,
@@ -157,7 +154,7 @@ def login():
             session["username"] = username
             flash("Successfully logged in.", "success")
             try:
-                update_current_year_grades(edu_session, username, sync_timetable=True)
+                update_current_year_grades(edu_session, username)
             except Exception as e:
                 flash(f"Could not sync grades: {e}", "error")
             return redirect(url_for("dashboard"))
@@ -201,7 +198,7 @@ def sync():
     edu_session = edupage_login(username, password)
     if edu_session:
         try:
-            update_current_year_grades(edu_session, username, sync_timetable=True)
+            update_current_year_grades(edu_session, username)
             flash("Synced with EduPage. Timetable updated. Manual overrides preserved.", "success")
         except Exception as e:
             flash(f"Sync error: {e}", "error")
@@ -219,6 +216,28 @@ def sync_log():
     student_id = _student_id()
     logs = get_sync_logs(student_id, limit=40)
     return render_template("sync_log.html", logs=logs)
+
+
+@app.route("/analytics")
+def analytics():
+    redir = _require_login()
+    if redir:
+        return redir
+
+    username = session["username"]
+    student_id = _student_id()
+
+    try:
+        data = get_analytics_data(username)
+    except Exception as e:
+        flash(f"Could not build analytics: {e}", "error")
+        return redirect(url_for("dashboard"))
+
+    return render_template(
+        "analytics.html",
+        analytics=data,
+        friendly_name=student_id,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -450,13 +469,12 @@ def subject_edit(year):
         flash("Invalid lessons-per-week value.", "error")
         return redirect(url_for("dashboard"))
 
-    upsert_subject_meta(
+    set_manual_lpw(
         student_id=student_id,
         year=year,
         subject=subject,
         lessons_per_week=lpw,
         include_in_gpa=include,
-        is_manual_override=True,
     )
     flash(f"Updated {subject} ({year}): {lpw} lessons/week.", "success")
     return redirect(url_for("dashboard"))
@@ -481,13 +499,12 @@ def subject_save_all(year):
             include = request.form.get(f"include_{i}") == "1"
         except (ValueError, TypeError):
             continue
-        upsert_subject_meta(
+        set_manual_lpw(
             student_id=student_id,
             year=year,
             subject=subject,
             lessons_per_week=lpw,
             include_in_gpa=include,
-            is_manual_override=True,
         )
         updated += 1
 
@@ -504,7 +521,7 @@ def subject_delete(year):
     student_id = _student_id()
     subject = (request.form.get("subject") or "").strip()
     if subject:
-        delete_subject_meta(student_id, year, subject)
+        delete_manual_lpw(student_id, year, subject)
         flash(f"Removed {subject} from {year} subject list.", "success")
     return redirect(url_for("dashboard"))
 
@@ -543,56 +560,6 @@ def external_year_delete(year):
     delete_external_year_gpa(_student_id(), year)
     flash(f"External year {year} removed.", "success")
     return redirect(url_for("dashboard"))
-
-
-# ---------------------------------------------------------------------------
-# PDF transcript export
-# ---------------------------------------------------------------------------
-
-@app.route("/transcript/pdf")
-def transcript_pdf():
-    redir = _require_login()
-    if redir:
-        return redir
-
-    username = session["username"]
-    student_id = _student_id()
-
-    try:
-        graduation_year = get_graduation_year(username)
-    except Exception:
-        graduation_year = None
-
-    try:
-        report = get_full_dashboard_data(None, username)
-    except Exception as e:
-        flash(f"Could not generate transcript: {e}", "error")
-        return redirect(url_for("dashboard"))
-
-    from datetime import date as _date
-    html = render_template(
-        "transcript_pdf.html",
-        report=report,
-        student_id=student_id,
-        graduation_year=graduation_year,
-        now=_date.today().strftime("%d.%m.%Y"),
-    )
-
-    try:
-        from weasyprint import HTML
-        pdf_bytes = HTML(string=html).write_pdf()
-        return send_file(
-            io.BytesIO(pdf_bytes),
-            mimetype="application/pdf",
-            as_attachment=True,
-            download_name=f"{student_id}_transcript.pdf",
-        )
-    except ImportError:
-        flash("WeasyPrint is not installed. Install it with: pip install weasyprint", "error")
-        return redirect(url_for("dashboard"))
-    except Exception as e:
-        flash(f"PDF generation failed: {e}", "error")
-        return redirect(url_for("dashboard"))
 
 
 # ---------------------------------------------------------------------------

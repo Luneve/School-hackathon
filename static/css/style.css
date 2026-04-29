@@ -1,205 +1,649 @@
-/* GOV.UK style inspired CSS */
+/* GetGrader — Content-first, high-contrast, modern SaaS over GOV.UK foundations. */
 
 :root {
-    --govuk-text: #0b0c0c;
-    --govuk-secondary-text: #505a5f;
-    --govuk-link: #1d70b8;
-    --govuk-link-hover: #003078;
-    --govuk-border: #b1b4b6;
-    --govuk-focus: #ffdd00;
-    --govuk-button: #00703c;
-    --govuk-button-hover: #005a30;
-    --govuk-error: #d4351c;
-    --govuk-header-bg: #0b0c0c;
+    /* Brand */
+    --gg-blue: #003087;
+    --gg-blue-hover: #001f5c;
+    --gg-blue-soft: #e8edf7;
+    --gg-blue-line: #c7d2e8;
+
+    /* Neutrals */
+    --gg-text: #0b0c0c;
+    --gg-text-muted: #505a5f;
+    --gg-surface: #ffffff;
+    --gg-canvas: #f3f2f1;
+    --gg-border: #d8d8d8;
+    --gg-border-strong: #b1b4b6;
+
+    /* Status */
+    --gg-success: #00703c;
+    --gg-success-soft: #e6f3ec;
+    --gg-warning: #ffc107;
+    --gg-warning-soft: #fff8db;
+    --gg-warning-text: #6b5300;
+    --gg-error: #d4351c;
+    --gg-error-soft: #fdecea;
+    --gg-focus: #ffdd00;
+
+    /* Surface system */
+    --gg-radius-sm: 4px;
+    --gg-radius-md: 8px;
+    --gg-shadow-sm: 0 1px 2px rgba(11, 12, 12, 0.06);
+    --gg-shadow-md: 0 2px 6px rgba(11, 12, 12, 0.08), 0 1px 2px rgba(11, 12, 12, 0.04);
+    --gg-shadow-lg: 0 8px 24px rgba(0, 48, 135, 0.10);
 }
 
+/* -------------------------------------------------- Base */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
 body {
-    font-family: "GDS Transport", Arial, sans-serif;
-    color: var(--govuk-text);
-    background-color: #ffffff;
-    line-height: 1.25;
+    font-family: "Inter", "GDS Transport", -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+    color: var(--gg-text);
+    background-color: var(--gg-canvas);
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01", "cv11";
 }
 
-/* Header */
+/* -------------------------------------------------- Header */
+
 .govuk-header {
-    background-color: var(--govuk-header-bg);
+    background-color: var(--gg-blue);
     color: #ffffff;
-    padding: 10px 0;
-    border-bottom: 10px solid var(--govuk-link);
+    padding: 14px 0;
+    border-bottom: 4px solid var(--gg-blue-hover);
+    box-shadow: var(--gg-shadow-md);
 }
 
 .govuk-header__container {
-    max-width: 960px;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 24px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .govuk-header__logotype {
-    font-size: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.govuk-header__logotype::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: var(--gg-radius-sm);
+    background:
+        linear-gradient(135deg, #ffffff 0%, #ffffff 50%, transparent 50%),
+        var(--gg-blue-hover);
+    box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+/* -------------------------------------------------- Width container */
+
+.govuk-width-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+}
+
+/* -------------------------------------------------- App shell with sidebar */
+
+.gg-shell {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 28px 24px 64px;
+    align-items: start;
+}
+
+.gg-shell--full {
+    grid-template-columns: 1fr;
+}
+
+.gg-sidebar {
+    position: sticky;
+    top: 24px;
+    background: var(--gg-surface);
+    border: 1px solid var(--gg-border);
+    border-radius: var(--gg-radius-md);
+    box-shadow: var(--gg-shadow-sm);
+    padding: 16px 0;
+}
+
+.gg-sidebar__group {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gg-text-muted);
+    padding: 14px 20px 6px;
+}
+
+.gg-sidebar__group:first-child { padding-top: 4px; }
+
+.gg-sidebar__link {
+    display: block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gg-text);
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+.gg-sidebar__link:hover {
+    background-color: var(--gg-canvas);
+    color: var(--gg-blue);
+}
+
+.gg-sidebar__link.is-active {
+    background-color: var(--gg-blue-soft);
+    color: var(--gg-blue);
+    border-left-color: var(--gg-blue);
+    font-weight: 600;
+}
+
+.gg-main { min-width: 0; }
+
+.gg-header-user {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 880px) {
+    .gg-shell { grid-template-columns: 1fr; padding: 20px 16px 48px; }
+    .gg-sidebar { position: static; }
+    .gg-sidebar nav { display: flex; flex-wrap: wrap; gap: 4px; padding: 8px; }
+    .gg-sidebar__group { display: none; }
+    .gg-sidebar__link { padding: 8px 14px; border-left: none; border-bottom: 3px solid transparent; border-radius: var(--gg-radius-sm); }
+    .gg-sidebar__link.is-active { border-left: none; border-bottom-color: var(--gg-blue); }
+}
+
+/* -------------------------------------------------- Analytics: KPI strip */
+
+.gg-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.gg-kpi {
+    background: var(--gg-surface);
+    border: 1px solid var(--gg-border);
+    border-radius: var(--gg-radius-md);
+    box-shadow: var(--gg-shadow-sm);
+    padding: 16px 18px;
+    transition: box-shadow 0.15s ease, transform 0.05s ease;
+}
+
+.gg-kpi:hover {
+    box-shadow: var(--gg-shadow-md);
+}
+
+.gg-kpi--warn {
+    border-color: var(--gg-warning);
+    background: var(--gg-warning-soft);
+}
+
+.gg-kpi__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gg-text-muted);
+    font-weight: 600;
+}
+
+.gg-kpi__value {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gg-blue);
+    margin: 4px 0 2px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+.gg-kpi--warn .gg-kpi__value { color: var(--gg-warning-text); }
+
+.gg-kpi__sub {
+    font-size: 13px;
+    color: var(--gg-text-muted);
+}
+
+/* -------------------------------------------------- Analytics grid */
+
+.gg-analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.gg-card {
+    background: var(--gg-surface);
+    border: 1px solid var(--gg-border);
+    border-radius: var(--gg-radius-md);
+    box-shadow: var(--gg-shadow-sm);
+    padding: 20px 22px;
+}
+
+.gg-card--wide { grid-column: span 2; }
+
+.gg-card__title {
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gg-blue);
+}
+
+@media (max-width: 720px) {
+    .gg-analytics-grid { grid-template-columns: 1fr; }
+    .gg-card--wide { grid-column: span 1; }
+}
+
+/* -------------------------------------------------- GPA trend (line graph) */
+
+.gg-graph {
+    width: 100%;
+    background: linear-gradient(180deg, #ffffff 0%, var(--gg-canvas) 100%);
+    border-radius: var(--gg-radius-md);
+    padding: 8px;
+    border: 1px solid var(--gg-border);
+}
+
+.gg-graph svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gg-graph circle {
+    transition: r 0.15s ease;
+}
+
+.gg-graph circle:hover {
+    r: 8;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------- Letter distribution */
+
+.gg-dist {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.gg-dist__row {
+    display: grid;
+    grid-template-columns: 36px 1fr 36px;
+    align-items: center;
+    gap: 10px;
+}
+
+.gg-dist__letter {
+    font-weight: 700;
+    color: var(--gg-blue);
+    font-size: 14px;
+}
+
+.gg-dist__bar-track {
+    background: var(--gg-canvas);
+    border-radius: var(--gg-radius-sm);
+    height: 12px;
+    overflow: hidden;
+}
+
+.gg-dist__bar {
+    background: var(--gg-blue);
+    height: 100%;
+    border-radius: var(--gg-radius-sm);
+    transition: width 0.3s ease;
+}
+
+.gg-dist__count {
+    text-align: right;
+    font-weight: 600;
+    color: var(--gg-text);
+    font-size: 14px;
+}
+
+/* -------------------------------------------------- Rank lists */
+
+.gg-rank {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gg-rank__row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: var(--gg-radius-sm);
+    border-bottom: 1px solid var(--gg-border);
+}
+.gg-rank__row:last-child { border-bottom: none; }
+.gg-rank__row:hover { background: var(--gg-canvas); }
+
+.gg-rank__num {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--gg-blue-soft);
+    color: var(--gg-blue);
+    font-size: 12px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    color: #ffffff;
-    text-decoration: none;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-/* Typography */
-h1, .govuk-heading-xl {
-    font-size: 48px;
+.gg-rank__subject {
+    flex: 1;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.gg-rank__score {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: right;
+}
+
+/* -------------------------------------------------- Category averages */
+
+.gg-cat {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.gg-cat__row { display: flex; flex-direction: column; gap: 4px; }
+
+.gg-cat__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.gg-cat__name {
     font-weight: 700;
-    margin-bottom: 30px;
-    margin-top: 0;
+    color: var(--gg-blue);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.gg-cat__value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gg-text);
+}
+
+.gg-cat__bar-track {
+    height: 8px;
+    background: var(--gg-canvas);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.gg-cat__bar {
+    background: linear-gradient(90deg, var(--gg-blue) 0%, var(--gg-blue-hover) 100%);
+    height: 100%;
+    transition: width 0.4s ease;
+}
+
+.gg-cat__sub {
+    font-size: 12px;
+    color: var(--gg-text-muted);
+}
+
+/* -------------------------------------------------- Typography */
+
+h1, .govuk-heading-xl {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--gg-blue);
+    margin: 0 0 24px;
+    line-height: 1.15;
 }
 
 h2, .govuk-heading-l {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    letter-spacing: -0.01em;
+    color: var(--gg-text);
+    margin: 36px 0 16px;
+    line-height: 1.2;
 }
 
 h3, .govuk-heading-m {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 700;
-    margin-bottom: 15px;
+    color: var(--gg-text);
+    margin: 0 0 12px;
 }
 
 p, .govuk-body {
-    font-size: 19px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    margin: 0 0 16px;
+    color: var(--gg-text);
+}
+
+.govuk-secondary-text {
+    color: var(--gg-text-muted);
+    font-weight: 400;
 }
 
 a.govuk-link {
-    color: var(--govuk-link);
+    color: var(--gg-blue);
     text-decoration: underline;
     text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+    font-weight: 500;
+}
+a.govuk-link:hover {
+    color: var(--gg-blue-hover);
     text-decoration-thickness: 2px;
 }
 
-a.govuk-link:hover {
-    color: var(--govuk-link-hover);
+a:focus, button:focus, input:focus, select:focus, summary:focus {
+    outline: 3px solid var(--gg-focus);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(0, 48, 135, 0.15);
 }
 
-a:focus, button:focus, input:focus, select:focus {
-    outline: 3px solid var(--govuk-focus);
-    outline-offset: 0;
-    box-shadow: inset 0 0 0 2px var(--govuk-text);
-}
+/* -------------------------------------------------- Buttons */
 
-/* Container */
-.govuk-width-container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 30px 15px;
-}
-
-/* Buttons */
 .govuk-button {
-    background-color: var(--govuk-button);
+    background-color: var(--gg-blue);
     color: #ffffff;
-    font-size: 19px;
-    font-weight: 400;
-    padding: 8px 10px;
-    border: 2px solid transparent;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: none;
+    border-radius: var(--gg-radius-md);
     cursor: pointer;
-    box-shadow: 0 2px 0 var(--govuk-text);
+    box-shadow: var(--gg-shadow-sm);
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.05s ease;
+    line-height: 1.25;
 }
 
 .govuk-button:hover {
-    background-color: var(--govuk-button-hover);
+    background-color: var(--gg-blue-hover);
+    box-shadow: var(--gg-shadow-md);
+}
+
+.govuk-button:active {
+    transform: translateY(1px);
 }
 
 .govuk-button--secondary {
-    background-color: #f3f2f1;
-    color: var(--govuk-text);
-    box-shadow: 0 2px 0 var(--govuk-border);
+    background-color: #ffffff;
+    color: var(--gg-blue);
+    box-shadow: inset 0 0 0 1.5px var(--gg-blue);
 }
 .govuk-button--secondary:hover {
-    background-color: #e5e5e5;
+    background-color: var(--gg-blue-soft);
+    color: var(--gg-blue-hover);
+    box-shadow: inset 0 0 0 1.5px var(--gg-blue-hover);
 }
 
-/* Forms */
+.govuk-button--warning {
+    background-color: var(--gg-error);
+    color: #ffffff;
+    font-size: 14px;
+    padding: 7px 12px;
+}
+.govuk-button--warning:hover {
+    background-color: #aa291a;
+}
+
+/* -------------------------------------------------- Forms */
+
 .govuk-form-group {
     margin-bottom: 20px;
 }
 
 .govuk-label {
     display: block;
-    font-size: 19px;
-    font-weight: 400;
-    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--gg-text);
 }
 
 .govuk-input, .govuk-select {
     font-family: inherit;
-    font-size: 19px;
-    padding: 5px;
-    border: 2px solid var(--govuk-text);
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 1.5px solid var(--gg-border-strong);
+    border-radius: var(--gg-radius-sm);
+    background: #ffffff;
     width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
+    max-width: 420px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* Tables */
+.govuk-input:hover, .govuk-select:hover {
+    border-color: var(--gg-text);
+}
+
+.govuk-input:focus, .govuk-select:focus {
+    border-color: var(--gg-blue);
+    box-shadow: 0 0 0 3px rgba(0, 48, 135, 0.18);
+    outline: none;
+}
+
+/* -------------------------------------------------- Surfaces */
+
+.gg-surface {
+    background: var(--gg-surface);
+    border: 1px solid var(--gg-border);
+    border-radius: var(--gg-radius-md);
+    box-shadow: var(--gg-shadow-sm);
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------- Tables */
+
 .govuk-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    font-size: 15px;
 }
 
 .govuk-table__header {
     font-weight: 700;
     text-align: left;
-    padding: 10px 20px 10px 0;
-    border-bottom: 2px solid var(--govuk-border);
+    padding: 12px 16px 12px 0;
+    border-bottom: 2px solid var(--gg-blue);
+    color: var(--gg-blue);
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.04em;
 }
 
 .govuk-table__cell {
-    padding: 10px 20px 10px 0;
-    border-bottom: 1px solid var(--govuk-border);
+    padding: 12px 16px 12px 0;
+    border-bottom: 1px solid var(--gg-border);
+    color: var(--gg-text);
 }
 
-/* Tag */
+.govuk-table tbody tr:hover {
+    background-color: var(--gg-blue-soft);
+}
+
+/* -------------------------------------------------- Tags */
+
 .govuk-tag {
     display: inline-block;
-    padding: 5px 8px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1;
-    letter-spacing: 1px;
+    padding: 4px 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    background-color: var(--govuk-link);
+    background-color: var(--gg-blue);
     color: #ffffff;
+    border-radius: 999px;
 }
+.govuk-tag--blue { background-color: var(--gg-blue); color: #ffffff; }
+.govuk-tag--yellow { background-color: var(--gg-warning); color: var(--gg-warning-text); }
+.govuk-tag--grey  { background-color: var(--gg-canvas); color: var(--gg-text-muted); }
 
-.govuk-tag--yellow {
-    background-color: var(--govuk-focus);
-    color: var(--govuk-text);
-}
+/* -------------------------------------------------- Summary cards */
 
-/* Summary Box */
 .govuk-summary-card {
-    border: 1px solid var(--govuk-border);
+    background: var(--gg-surface);
+    border: 1px solid var(--gg-border);
+    border-radius: var(--gg-radius-md);
+    box-shadow: var(--gg-shadow-sm);
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .govuk-summary-card__title-wrapper {
-    background-color: #f3f2f1;
-    padding: 15px;
-    border-bottom: 1px solid var(--govuk-border);
+    background: linear-gradient(180deg, #ffffff 0%, var(--gg-canvas) 100%);
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--gg-border);
 }
 
 .govuk-summary-card__title {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     margin: 0;
+    color: var(--gg-blue);
 }
 
 .govuk-summary-list {
@@ -210,85 +654,51 @@ a:focus, button:focus, input:focus, select:focus {
 
 .govuk-summary-list__row {
     display: flex;
-    padding: 15px;
-    border-bottom: 1px solid var(--govuk-border);
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--gg-border);
+    gap: 16px;
 }
+.govuk-summary-list__row:last-child { border-bottom: none; }
+.govuk-summary-list__row--highlight { background-color: var(--gg-blue-soft); }
 
-.govuk-summary-list__row:last-child {
-    border-bottom: none;
-}
+.govuk-summary-list__key { font-weight: 600; width: 30%; color: var(--gg-text-muted); }
+.govuk-summary-list__value { width: 50%; }
+.govuk-summary-list__actions { width: 20%; text-align: right; }
 
-.govuk-summary-list__key {
-    font-weight: 700;
-    width: 30%;
-}
+/* -------------------------------------------------- Flash messages */
 
-.govuk-summary-list__value {
-    width: 50%;
-}
-
-.govuk-summary-list__actions {
-    width: 20%;
-    text-align: right;
-}
-
-.govuk-summary-list__row--highlight {
-    background-color: #f3f2f1;
-}
-
-/* Tag colors */
-.govuk-tag--blue {
-    background-color: var(--govuk-link);
-    color: #ffffff;
-}
-
-/* Secondary / muted text */
-.govuk-secondary-text {
-    color: var(--govuk-secondary-text);
-    font-weight: 400;
-}
-
-/* Flash messages */
 .govuk-flash {
-    padding: 15px;
+    padding: 14px 18px;
     margin-bottom: 20px;
-    font-weight: 700;
-    border-left: 5px solid transparent;
+    font-weight: 500;
+    border-radius: var(--gg-radius-md);
+    border-left: 4px solid transparent;
+    box-shadow: var(--gg-shadow-sm);
+    font-size: 15px;
 }
 
-.govuk-flash--error {
-    background-color: var(--govuk-error);
-    color: #ffffff;
-    border-left-color: #5a1208;
-}
+.govuk-flash--error   { background: var(--gg-error-soft); color: #7a1d10; border-left-color: var(--gg-error); }
+.govuk-flash--success { background: var(--gg-success-soft); color: #1f5d3d; border-left-color: var(--gg-success); }
+.govuk-flash--info    { background: var(--gg-blue-soft); color: var(--gg-blue-hover); border-left-color: var(--gg-blue); }
 
-.govuk-flash--success {
-    background-color: var(--govuk-button);
-    color: #ffffff;
-    border-left-color: #003b1f;
-}
+/* -------------------------------------------------- Dashboard header */
 
-.govuk-flash--info {
-    background-color: #f3f2f1;
-    color: var(--govuk-text);
-    border-left-color: var(--govuk-link);
-}
-
-/* Dashboard header layout */
 .dashboard-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gg-border);
 }
 
 .dashboard-header__actions {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 .dashboard-sync-form {
@@ -297,63 +707,52 @@ a:focus, button:focus, input:focus, select:focus {
     gap: 8px;
 }
 
-/* Warning button for destructive actions */
-.govuk-button--warning {
-    background-color: var(--govuk-error);
-    color: #ffffff;
-    box-shadow: 0 2px 0 #5a1208;
-    font-size: 16px;
-    padding: 6px 10px;
-}
+/* -------------------------------------------------- Prediction card */
 
-.govuk-button--warning:hover {
-    background-color: #aa291a;
-}
-
-/* Prediction preview card */
 .govuk-prediction-card {
-    border: 2px solid var(--govuk-link);
+    border: 1.5px solid var(--gg-blue);
+    box-shadow: var(--gg-shadow-md);
 }
 
 .prediction-grid {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     flex-wrap: wrap;
+    padding: 8px 20px 20px;
 }
 
 .prediction-cell {
     display: flex;
     flex-direction: column;
-    min-width: 140px;
-    padding: 10px 15px;
-    background-color: #f3f2f1;
+    min-width: 150px;
+    padding: 14px 18px;
+    background: var(--gg-blue-soft);
+    border-radius: var(--gg-radius-md);
+    border: 1px solid var(--gg-blue-line);
 }
 
 .prediction-label {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--govuk-secondary-text);
+    letter-spacing: 0.06em;
+    color: var(--gg-blue-hover);
+    font-weight: 600;
 }
 
 .prediction-value {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
-    margin-top: 4px;
+    margin-top: 6px;
+    color: var(--gg-blue);
+    letter-spacing: -0.01em;
 }
 
-.prediction-delta--up {
-    color: var(--govuk-button);
-}
+.prediction-delta--up   { color: var(--gg-success); }
+.prediction-delta--down { color: var(--gg-error); }
 
-.prediction-delta--down {
-    color: var(--govuk-error);
-}
-
-/* Add prediction block */
 .add-prediction-block {
-    margin-top: 30px;
-    border-top: 2px solid var(--govuk-border);
+    margin-top: 28px;
+    border-top: 1px solid var(--gg-border);
     padding-top: 20px;
 }
 
@@ -362,162 +761,263 @@ a:focus, button:focus, input:focus, select:focus {
     gap: 10px;
 }
 
-/* ── Year card (collapsible) ── */
+/* -------------------------------------------------- Year card (collapsible) */
+
 .year-card {
-    border: 1px solid var(--govuk-border);
-    margin-bottom: 12px;
+    background: var(--gg-surface);
+    border: 1px solid var(--gg-border);
+    border-radius: var(--gg-radius-md);
+    box-shadow: var(--gg-shadow-sm);
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
 }
+
+.year-card:hover { box-shadow: var(--gg-shadow-md); }
 
 .year-card > summary,
 .year-card__header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 14px 16px;
-    background: #f3f2f1;
+    padding: 18px 20px;
+    background: linear-gradient(180deg, #ffffff 0%, var(--gg-canvas) 100%);
     cursor: pointer;
     list-style: none;
     gap: 12px;
     flex-wrap: wrap;
+    user-select: none;
 }
 
-.year-card > summary::-webkit-details-marker { display: none; }
+.year-card > summary::-webkit-details-marker,
+.year-card > summary::marker { display: none; content: ""; }
 
 .year-card[open] > summary {
-    border-bottom: 1px solid var(--govuk-border);
+    border-bottom: 2px solid var(--gg-blue-line);
+    background: var(--gg-blue-soft);
 }
 
+.year-card[open] {
+    border-color: var(--gg-blue-line);
+    box-shadow: 0 0 0 1px var(--gg-blue-line), var(--gg-shadow-md);
+}
+
+.year-card[open] > summary .year-card__title { color: var(--gg-blue); }
+
+.year-card > summary::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid var(--gg-blue);
+    transition: transform 0.2s ease;
+}
+.year-card[open] > summary::before { transform: rotate(90deg); }
+
 .year-card__title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
+    color: var(--gg-text);
 }
 
 .year-card__period {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    color: var(--govuk-secondary-text);
+    color: var(--gg-text-muted);
     margin-left: 8px;
 }
 
 .year-card__meta {
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    margin-left: auto;
 }
 
-.year-card__body {
-    padding: 16px;
-}
-
-/* At-risk indicators */
-.at-risk-badge {
-    background: #fff3cd;
-    color: #856404;
-    border: 1px solid #ffc107;
-    padding: 3px 8px;
+.year-card__warn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     font-size: 13px;
+    font-weight: 600;
+    color: var(--gg-warning-text);
+    background: var(--gg-warning-soft);
+    border: 1px solid var(--gg-warning);
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.year-card__body { padding: 20px; }
+
+/* -------------------------------------------------- At-risk indicators */
+
+.at-risk-badge {
+    background: var(--gg-warning-soft);
+    color: var(--gg-warning-text);
+    border: 1px solid var(--gg-warning);
+    padding: 3px 9px;
+    font-size: 12px;
     font-weight: 700;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .at-risk-summary {
-    background: #fff3cd;
-    color: #856404;
-    border: 1px solid #ffc107;
+    background: var(--gg-warning-soft);
+    color: var(--gg-warning-text);
+    border: 1px solid var(--gg-warning);
     padding: 8px 14px;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: var(--gg-radius-md);
 }
 
 .at-risk-inline {
-    color: #d4351c;
+    color: var(--gg-error);
     margin-right: 4px;
-}
-
-.row--at-risk td {
-    background-color: #fff8f8;
-}
-
-/* GPA-not-configured warning */
-.govuk-tag--grey {
-    background-color: #b1b4b6;
-    color: #0b0c0c;
-}
-
-/* ── Edit subjects panel ── */
-.edit-panel {
-    margin-top: 14px;
-    border: 1px solid var(--govuk-border);
-}
-
-.edit-panel__summary {
-    padding: 8px 12px;
-    background: #f3f2f1;
-    cursor: pointer;
-    font-size: 16px;
     font-weight: 700;
+}
+
+.row--at-risk td { background-color: #fff8f8; }
+
+/* -------------------------------------------------- Edit / disclosure panels */
+
+.edit-panel,
+.whatif-block {
+    margin-top: 14px;
+    border: 1px solid var(--gg-border);
+    border-radius: var(--gg-radius-md);
+    background: var(--gg-surface);
+    overflow: hidden;
+}
+
+.edit-panel__summary,
+.whatif-summary {
+    padding: 12px 16px;
+    background: var(--gg-canvas);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--gg-blue);
     list-style: none;
+    user-select: none;
 }
 
-.edit-panel__summary::-webkit-details-marker { display: none; }
+.edit-panel__summary::-webkit-details-marker,
+.whatif-summary::-webkit-details-marker { display: none; }
 
-.edit-panel__body {
-    padding: 12px;
+.edit-panel[open] .edit-panel__summary,
+.whatif-block[open] .whatif-summary {
+    border-bottom: 1px solid var(--gg-border);
 }
+
+.edit-panel__body { padding: 16px; }
+.whatif-block > div { padding: 0 16px 16px; }
 
 .edit-row-form {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     flex-wrap: wrap;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: var(--gg-canvas);
+    border-radius: var(--gg-radius-sm);
 }
 
 .edit-row-label {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 15px;
     min-width: 160px;
+    color: var(--gg-text);
 }
 
 .edit-row-field-label {
-    font-size: 15px;
+    font-size: 14px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
+    color: var(--gg-text-muted);
 }
 
 .edit-row-input {
-    padding: 4px;
-    font-size: 16px;
+    padding: 6px 8px;
+    font-size: 15px;
+    border: 1.5px solid var(--gg-border-strong);
+    border-radius: var(--gg-radius-sm);
+    font-family: inherit;
 }
 
-/* ── What-if blocks ── */
-.whatif-block {
-    border: 1px solid var(--govuk-border);
-    margin-bottom: 14px;
+.edit-row-input:focus {
+    border-color: var(--gg-blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 48, 135, 0.18);
 }
 
-.whatif-summary {
-    padding: 10px 14px;
-    background: #f3f2f1;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: 700;
-    list-style: none;
-}
+/* -------------------------------------------------- Reverse GPA result */
 
-.whatif-summary::-webkit-details-marker { display: none; }
-
-.whatif-block > div {
-    padding: 0 14px 14px;
-}
-
-/* Reverse GPA result card */
 .reverse-result-card {
-    background: #e8f4fd;
-    border-left: 4px solid var(--govuk-link);
-    padding: 12px 16px;
+    background: var(--gg-blue-soft);
+    border: 1px solid var(--gg-blue-line);
+    border-left: 4px solid var(--gg-blue);
+    padding: 14px 18px;
     margin-top: 14px;
-    font-size: 17px;
+    font-size: 15px;
+    border-radius: var(--gg-radius-md);
+    box-shadow: var(--gg-shadow-sm);
+    color: var(--gg-blue-hover);
+}
+
+/* -------------------------------------------------- Login surface */
+
+.gg-login-card {
+    max-width: 460px;
+    margin: 40px auto;
+    background: var(--gg-surface);
+    border: 1px solid var(--gg-border);
+    border-radius: var(--gg-radius-md);
+    box-shadow: var(--gg-shadow-lg);
+    padding: 36px 36px 32px;
+}
+
+.gg-login-card h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.gg-login-card .gg-login-subtitle {
+    font-size: 15px;
+    color: var(--gg-text-muted);
+    margin-bottom: 28px;
+}
+
+.gg-login-card .govuk-button {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.gg-login-card .govuk-input {
+    max-width: 100%;
+}
+
+/* -------------------------------------------------- Responsive */
+
+@media (max-width: 640px) {
+    .govuk-width-container { padding: 20px 16px 48px; }
+    h1, .govuk-heading-xl { font-size: 28px; }
+    h2, .govuk-heading-l { font-size: 22px; }
+    .dashboard-header { flex-direction: column; align-items: stretch; }
+    .govuk-summary-list__row { flex-direction: column; gap: 4px; }
+    .govuk-summary-list__key,
+    .govuk-summary-list__value,
+    .govuk-summary-list__actions { width: 100%; text-align: left; }
 }

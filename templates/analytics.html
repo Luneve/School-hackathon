@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+{% block title %}Analytics — GetGrader{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-header">
+    <h1 class="govuk-heading-xl" style="margin-bottom:0;">Analytics</h1>
+    <span class="govuk-secondary-text">Insights for {{ friendly_name }}</span>
+</div>
+
+{# ── KPI strip ── #}
+<section class="gg-kpi-grid">
+    <div class="gg-kpi">
+        <div class="gg-kpi__label">Cumulative GPA</div>
+        <div class="gg-kpi__value">{{ analytics.overall_gpa }}</div>
+        <div class="gg-kpi__sub">{{ analytics.overall_letter }} · / 4.0</div>
+    </div>
+    <div class="gg-kpi">
+        <div class="gg-kpi__label">Years tracked</div>
+        <div class="gg-kpi__value">{{ analytics.totals.years_tracked }}</div>
+        <div class="gg-kpi__sub">academic years</div>
+    </div>
+    <div class="gg-kpi">
+        <div class="gg-kpi__label">Subjects total</div>
+        <div class="gg-kpi__value">{{ analytics.totals.total_subjects }}</div>
+        <div class="gg-kpi__sub">
+            {{ analytics.totals.complete }} complete ·
+            {{ analytics.totals.in_progress }} in progress
+        </div>
+    </div>
+    <div class="gg-kpi {% if analytics.totals.at_risk > 0 %}gg-kpi--warn{% endif %}">
+        <div class="gg-kpi__label">At risk</div>
+        <div class="gg-kpi__value">{{ analytics.totals.at_risk }}</div>
+        <div class="gg-kpi__sub">subjects below 3.0</div>
+    </div>
+    <div class="gg-kpi">
+        <div class="gg-kpi__label">Lessons / week</div>
+        <div class="gg-kpi__value">{{ analytics.totals.current_year_lpw }}</div>
+        <div class="gg-kpi__sub">current year</div>
+    </div>
+</section>
+
+<div class="gg-analytics-grid">
+
+    {# ── GPA trend (line graph) ── #}
+    <section class="gg-card gg-card--wide">
+        <h3 class="gg-card__title">GPA trend by year</h3>
+        {% if analytics.gpa_trend %}
+            {% set n = analytics.gpa_trend|length %}
+            {% set vb_w = 720 %}
+            {% set vb_h = 240 %}
+            {% set pad_l = 44 %}
+            {% set pad_r = 24 %}
+            {% set pad_t = 20 %}
+            {% set pad_b = 44 %}
+            {% set plot_w = vb_w - pad_l - pad_r %}
+            {% set plot_h = vb_h - pad_t - pad_b %}
+
+            {% set ns = namespace(points=[], coords=[]) %}
+            {% for p in analytics.gpa_trend %}
+                {% set x = pad_l if n == 1 else pad_l + (loop.index0 * plot_w / (n - 1)) %}
+                {% set y = pad_t + plot_h - (p.gpa / 4.0 * plot_h) %}
+                {% set ns.points = ns.points + [(x, y)] %}
+                {% set ns.coords = ns.coords + [x|round(2)|string ~ ',' ~ y|round(2)|string] %}
+            {% endfor %}
+
+            <div class="gg-graph">
+                <svg viewBox="0 0 {{ vb_w }} {{ vb_h }}" role="img"
+                     aria-label="GPA trend by year line graph"
+                     preserveAspectRatio="none">
+
+                    <defs>
+                        <linearGradient id="ggGraphFill" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%"   stop-color="#003087" stop-opacity="0.25"/>
+                            <stop offset="100%" stop-color="#003087" stop-opacity="0"/>
+                        </linearGradient>
+                    </defs>
+
+                    {# Y-axis grid lines + labels (0, 1, 2, 3, 4) #}
+                    {% for tick in [0, 1, 2, 3, 4] %}
+                        {% set ty = pad_t + plot_h - (tick / 4.0 * plot_h) %}
+                        <line x1="{{ pad_l }}" y1="{{ ty }}"
+                              x2="{{ vb_w - pad_r }}" y2="{{ ty }}"
+                              stroke="#e3e3e3" stroke-width="1"
+                              stroke-dasharray="{{ '0' if tick == 0 else '3 4' }}"/>
+                        <text x="{{ pad_l - 8 }}" y="{{ ty + 4 }}"
+                              text-anchor="end" font-size="11"
+                              fill="#505a5f" font-family="Inter, sans-serif">
+                            {{ tick }}.0
+                        </text>
+                    {% endfor %}
+
+                    {# Filled area under the line #}
+                    {% if n > 1 %}
+                        {% set first_x = ns.points[0][0] %}
+                        {% set last_x = ns.points[-1][0] %}
+                        {% set baseline = pad_t + plot_h %}
+                        <path d="M {{ first_x }},{{ baseline }} L {{ ns.coords|join(' L ') }} L {{ last_x }},{{ baseline }} Z"
+                              fill="url(#ggGraphFill)"/>
+                    {% endif %}
+
+                    {# Line path #}
+                    {% if n > 1 %}
+                        <polyline points="{{ ns.coords|join(' ') }}"
+                                  fill="none" stroke="#003087"
+                                  stroke-width="2.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                    {% endif %}
+
+                    {# Data points + value labels + x-axis labels #}
+                    {% for p in analytics.gpa_trend %}
+                        {% set x = ns.points[loop.index0][0] %}
+                        {% set y = ns.points[loop.index0][1] %}
+                        <circle cx="{{ x }}" cy="{{ y }}" r="6"
+                                fill="#ffffff" stroke="#003087" stroke-width="2.5"/>
+                        <text x="{{ x }}" y="{{ y - 12 }}"
+                              text-anchor="middle" font-size="12"
+                              font-weight="700" fill="#003087"
+                              font-family="Inter, sans-serif">{{ p.gpa }}</text>
+                        <text x="{{ x }}" y="{{ vb_h - pad_b + 18 }}"
+                              text-anchor="middle" font-size="12"
+                              fill="#0b0c0c" font-weight="600"
+                              font-family="Inter, sans-serif">Gr {{ p.grade_level }}</text>
+                        <text x="{{ x }}" y="{{ vb_h - pad_b + 32 }}"
+                              text-anchor="middle" font-size="11"
+                              fill="#505a5f"
+                              font-family="Inter, sans-serif">{{ p.year }}/{{ (p.year + 1) % 100 }}</text>
+                    {% endfor %}
+                </svg>
+            </div>
+        {% else %}
+        <p class="govuk-secondary-text">No yearly GPA data yet.</p>
+        {% endif %}
+    </section>
+
+    {# ── Letter grade distribution ── #}
+    <section class="gg-card gg-card--wide">
+        <h3 class="gg-card__title">Letter grade distribution</h3>
+        {% if analytics.max_letter_count > 0 %}
+        <div class="gg-dist">
+            {% for row in analytics.letter_distribution %}
+                {% set ratio = (row.count / analytics.max_letter_count * 100) if analytics.max_letter_count else 0 %}
+                <div class="gg-dist__row">
+                    <div class="gg-dist__letter">{{ row.letter }}</div>
+                    <div class="gg-dist__bar-track">
+                        <div class="gg-dist__bar" style="width: {{ ratio }}%;"></div>
+                    </div>
+                    <div class="gg-dist__count">{{ row.count }}</div>
+                </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="govuk-secondary-text">No grades recorded yet.</p>
+        {% endif %}
+    </section>
+
+    {# ── Top performers ── #}
+    <section class="gg-card">
+        <h3 class="gg-card__title">Top subjects (current year)</h3>
+        {% if analytics.top_subjects %}
+        <ol class="gg-rank">
+            {% for s in analytics.top_subjects %}
+            <li class="gg-rank__row">
+                <span class="gg-rank__num">{{ loop.index }}</span>
+                <span class="gg-rank__subject">{{ s.subject }}</span>
+                <span class="gg-rank__score">
+                    <strong>{{ s.letter }}</strong>
+                    <span class="govuk-secondary-text">{{ s.gpa }}</span>
+                </span>
+            </li>
+            {% endfor %}
+        </ol>
+        {% else %}
+        <p class="govuk-secondary-text">No completed grades for the current year.</p>
+        {% endif %}
+    </section>
+
+    {# ── Bottom performers ── #}
+    <section class="gg-card">
+        <h3 class="gg-card__title">Needs attention (current year)</h3>
+        {% if analytics.bottom_subjects %}
+        <ol class="gg-rank">
+            {% for s in analytics.bottom_subjects %}
+            <li class="gg-rank__row">
+                <span class="gg-rank__num">{{ loop.index }}</span>
+                <span class="gg-rank__subject">{{ s.subject }}</span>
+                <span class="gg-rank__score">
+                    <strong>{{ s.letter }}</strong>
+                    <span class="govuk-secondary-text">{{ s.gpa }}</span>
+                </span>
+            </li>
+            {% endfor %}
+        </ol>
+        {% else %}
+        <p class="govuk-secondary-text">Not enough data — at least 5 subjects required.</p>
+        {% endif %}
+    </section>
+
+    {# ── Category averages ── #}
+    <section class="gg-card">
+        <h3 class="gg-card__title">Category averages (all years)</h3>
+        <div class="gg-cat">
+            {% for c in analytics.category_averages %}
+            <div class="gg-cat__row">
+                <div class="gg-cat__head">
+                    <span class="gg-cat__name">{{ c.category }}</span>
+                    <span class="gg-cat__value">{{ c.average }}%</span>
+                </div>
+                <div class="gg-cat__bar-track">
+                    <div class="gg-cat__bar" style="width: {{ c.average }}%;"></div>
+                </div>
+                <div class="gg-cat__sub">
+                    {{ c.samples }} sample{{ '' if c.samples == 1 else 's' }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    {# ── At-risk list ── #}
+    <section class="gg-card">
+        <h3 class="gg-card__title">At-risk watchlist</h3>
+        {% if analytics.at_risk %}
+        <table class="govuk-table" style="margin-bottom:0;">
+            <thead>
+                <tr>
+                    <th class="govuk-table__header">Subject</th>
+                    <th class="govuk-table__header">Year</th>
+                    <th class="govuk-table__header" style="text-align:right;">GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for s in analytics.at_risk %}
+                <tr>
+                    <td class="govuk-table__cell">{{ s.subject }}</td>
+                    <td class="govuk-table__cell">Gr {{ s.grade_level }}</td>
+                    <td class="govuk-table__cell" style="text-align:right;">
+                        <strong>{{ s.letter }}</strong>
+                        <span class="govuk-secondary-text">{{ s.gpa }}</span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="govuk-secondary-text">No at-risk subjects. Keep it up.</p>
+        {% endif %}
+    </section>
+
+</div>
+
+{% endblock %}

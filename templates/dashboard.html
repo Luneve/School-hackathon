@@ -18,14 +18,11 @@
 <div class="dashboard-header">
     <h1 class="govuk-heading-xl" style="margin-bottom:0;">Academic Dashboard</h1>
     <div class="dashboard-header__actions">
-        <a href="/sync/log" class="govuk-link" style="margin-right:10px;">Sync log</a>
-        <a href="/transcript/pdf" class="govuk-link" style="margin-right:15px;">Export PDF</a>
-        <a href="/logout" class="govuk-link" style="margin-right:15px;">Sign out</a>
         <form action="/sync" method="post" class="dashboard-sync-form">
             <input class="govuk-input" name="password" type="password"
-                   placeholder="Password" required style="width:170px;margin-bottom:0;">
+                   placeholder="EduPage password" required style="width:190px;margin-bottom:0;">
             <button type="submit" class="govuk-button govuk-button--secondary"
-                    style="margin-bottom:0;">Sync EduPage</button>
+                    style="margin-bottom:0;">Sync</button>
         </form>
     </div>
 </div>
@@ -160,7 +157,7 @@
                 {% set dist = distinction(yr.gpa) %}
                 {% if dist %}<em style="font-weight:400;font-style:italic;font-size:15px;color:#505a5f;"> {{ dist }}</em>{% endif %}
             {% else %}
-                <span style="color:#d4351c;font-size:14px;">⚠ Set lessons/week to enable GPA</span>
+                <span class="year-card__warn">⚠ Set lessons/week to enable GPA</span>
             {% endif %}
             {% set yr_at_risk = yr.subjects | selectattr("at_risk") | list | length %}
             {% if yr_at_risk %}

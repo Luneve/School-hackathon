@@ -1,38 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" class="govuk-template">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}EduPage Dashboard - GOV.UK Style{% endblock %}</title>
+    <meta name="theme-color" content="#003087">
+    <title>{% block title %}GetGrader{% endblock %}</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body class="govuk-template__body">
+<body>
     <header class="govuk-header" role="banner">
         <div class="govuk-header__container">
-            <a href="/" class="govuk-header__logotype">
-                GOV.UK EduPage
-            </a>
+            <a href="/" class="govuk-header__logotype">GetGrader</a>
+            {% if session.get('username') %}
+                <span class="gg-header-user">{{ session.get('username').split('@')[0] }}</span>
+            {% endif %}
         </div>
     </header>
 
-    <div class="govuk-width-container">
-        {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-                {% for category, message in messages %}
-                    {% if category == 'error' %}{% set kind = 'error' %}
-                    {% elif category == 'success' %}{% set kind = 'success' %}
-                    {% else %}{% set kind = 'info' %}{% endif %}
-                    <div class="govuk-flash govuk-flash--{{ kind }}">
-                        {{ message }}
-                    </div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
+    {% set show_sidebar = session.get('username') and not hide_sidebar %}
 
-        <main class="govuk-main-wrapper" id="main-content" role="main">
-            {% block content %}{% endblock %}
-        </main>
+    <div class="gg-shell {% if not show_sidebar %}gg-shell--full{% endif %}">
+        {% if show_sidebar %}
+        <aside class="gg-sidebar" aria-label="Primary navigation">
+            <nav>
+                <div class="gg-sidebar__group">Overview</div>
+                <a class="gg-sidebar__link {% if request.path == '/dashboard' %}is-active{% endif %}"
+                   href="/dashboard">Dashboard</a>
+                <a class="gg-sidebar__link {% if request.path == '/analytics' %}is-active{% endif %}"
+                   href="/analytics">Analytics</a>
+
+                <div class="gg-sidebar__group">Records</div>
+                <a class="gg-sidebar__link {% if request.path == '/sync/log' %}is-active{% endif %}"
+                   href="/sync/log">Sync log</a>
+                <div class="gg-sidebar__group">Account</div>
+                <a class="gg-sidebar__link" href="/logout">Sign out</a>
+            </nav>
+        </aside>
+        {% endif %}
+
+        <div class="gg-main">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        {% if category == 'error' %}{% set kind = 'error' %}
+                        {% elif category == 'success' %}{% set kind = 'success' %}
+                        {% else %}{% set kind = 'info' %}{% endif %}
+                        <div class="govuk-flash govuk-flash--{{ kind }}" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <main id="main-content" role="main">
+                {% block content %}{% endblock %}
+            </main>
+        </div>
     </div>
-
 </body>
 </html>

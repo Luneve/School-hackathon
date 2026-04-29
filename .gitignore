@@ -1,5 +1,27 @@
+# Environment
 .env
 .venv/
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
 .idea/
+.vscode/
+
+# Claude
+.claude/
+
+# Database (regenerated at runtime)
+data/database.db
+
+# Cached student grade data (personal, regenerated via sync)
+data/students/
+
+# Scratch files
+test.py

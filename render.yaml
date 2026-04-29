@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: getgrader
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: EDUPAGE_USERNAME
+        sync: false
+      - key: EDUPAGE_PASSWORD
+        sync: false

@@ -102,7 +102,7 @@ class SyncLog(Base):
 
 
 def _apply_lightweight_migrations():
-    """ALTER existing tables to add columns introduced after initial creation."""
+    """ALTER existing tables to add columns + clean up legacy rows."""
     inspector = inspect(engine)
     tables = set(inspector.get_table_names())
 
@@ -121,6 +121,14 @@ def _apply_lightweight_migrations():
                 conn.execute(text(
                     "ALTER TABLE grade ADD COLUMN class_avg_percent REAL DEFAULT 0.0"
                 ))
+
+    # SubjectMeta is now manual-overrides only — auto rows are redundant
+    # because the class JSON is the source of truth for auto LPW.
+    if "subject_meta" in tables:
+        cols = {c["name"] for c in inspector.get_columns("subject_meta")}
+        if "is_manual_override" in cols:
+            with engine.begin() as conn:
+                conn.execute(text("DELETE FROM subject_meta WHERE is_manual_override = 0"))
 
 
 def init_db():

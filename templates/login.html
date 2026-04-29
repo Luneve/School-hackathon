@@ -1,22 +1,25 @@
 {% extends "base.html" %}
-{% block title %}Sign in - GOV.UK EduPage{% endblock %}
+{% block title %}Sign in — GetGrader{% endblock %}
 
 {% block content %}
-<h1 class="govuk-heading-xl">Sign in to EduPage Dashboard</h1>
+<div class="gg-login-card">
+    <h1 class="govuk-heading-xl">Sign in to GetGrader</h1>
+    <p class="gg-login-subtitle">Enter your EduPage credentials to view your transcript and GPA report.</p>
 
-<p class="govuk-body">Use your EduPage credentials to view your academic record and GPA reports.</p>
+    <form action="/login" method="post" novalidate>
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="username">Username</label>
+            <input class="govuk-input" id="username" name="username" type="text"
+                   autocomplete="username" placeholder="e.g. a.almenov26" required>
+        </div>
 
-<form action="/login" method="post" style="max-width: 400px; margin-top: 30px;">
-    <div class="govuk-form-group">
-        <label class="govuk-label" for="username">Username (e.g. a.almenov26)</label>
-        <input class="govuk-input" id="username" name="username" type="text" required>
-    </div>
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="password">Password</label>
+            <input class="govuk-input" id="password" name="password" type="password"
+                   autocomplete="current-password" required>
+        </div>
 
-    <div class="govuk-form-group">
-        <label class="govuk-label" for="password">Password</label>
-        <input class="govuk-input" id="password" name="password" type="password" required>
-    </div>
-
-    <button type="submit" class="govuk-button">Sign in</button>
-</form>
+        <button type="submit" class="govuk-button">Sign in</button>
+    </form>
+</div>
 {% endblock %}

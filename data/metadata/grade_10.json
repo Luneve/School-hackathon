@@ -1,177 +1,54 @@
 {
-  "Math": {
-    "name": "Mathematics",
-    "necessary": true,
-    "lessons_per_week": 8,
-    "rigor": "A-Level"
+  "English": {
+    "lessons_per_week": 4,
+    "necessary": true
   },
-
-  "Further Math": {
-    "name": "Further Mathematics",
-    "necessary": true,
-    "lessons_per_week": 8,
-    "rigor": "A-Level"
-  },
-
-  "CS": {
-    "name": "Computer Science",
-    "necessary": true,
-    "lessons_per_week": 6,
-    "rigor": "A-Level"
-  },
-
-  "Phy": {
-    "name": "Physics",
-    "necessary": true,
-    "lessons_per_week": 6,
-    "rigor": "A-Level"
-  },
-
   "Chem": {
-    "name": "Chemistry",
-    "necessary": true,
     "lessons_per_week": 6,
-    "rigor": "A-Level"
+    "necessary": true
   },
-
-  "Bio": {
-    "name": "Biology",
-    "necessary": true,
-    "lessons_per_week": 6,
-    "rigor": "A-Level"
-  },
-
-  "Econ": {
-    "name": "Economics",
-    "necessary": true,
-    "lessons_per_week": 6,
-    "rigor": "A-Level"
-  },
-
   "B": {
-    "name": "Business",
-    "necessary": true,
+    "lessons_per_week": 2,
+    "necessary": true
+  },
+  "CS": {
+    "lessons_per_week": 3,
+    "necessary": true
+  },
+  "Phy": {
     "lessons_per_week": 6,
-    "rigor": "A-Level"
+    "necessary": true
   },
-
-  "IT": {
-    "name": "Information Technology",
-    "necessary": true,
-    "lessons_per_week": 2,
-    "rigor": "A-Level"
-  },
-
-  "GP": {
-    "name": "Global Perspectives",
-    "necessary": true,
-    "lessons_per_week": 1,
-    "rigor": "A-Level"
-  },
-
-  "AP Phy": {
-    "name": "AP Physics C",
-    "necessary": true,
-    "lessons_per_week": 4,
-    "rigor": "AP"
-  },
-
-  "Calculus": {
-    "name": "AP Calculus BC",
-    "necessary": true,
-    "lessons_per_week": 4,
-    "rigor": "AP"
-  },
-
-  "AP Computer Science": {
-    "name": "AP Computer Science A",
-    "necessary": true,
-    "lessons_per_week": 4,
-    "rigor": "AP"
-  },
-
-  "AP Statistics": {
-    "name": "AP Statistics",
-    "necessary": true,
-    "lessons_per_week": 4,
-    "rigor": "AP"
-  },
-
-  "AP Economics": {
-    "name": "AP Economics",
-    "necessary": true,
-    "lessons_per_week": 4,
-    "rigor": "AP"
-  },
-
-  "ESL": {
-    "name": "English as a Second Language",
-    "necessary": true,
-    "lessons_per_week": 5,
-    "rigor": "Regular"
-  },
-
-  "Engr": {
-    "name": "Engineering",
-    "necessary": true,
-    "lessons_per_week": 2,
-    "rigor": "Regular"
-  },
-
   "Kaz Hist": {
-    "name": "Kazakh History",
-    "necessary": true,
     "lessons_per_week": 2,
-    "rigor": "Regular"
+    "necessary": true
   },
-
-  "KazLit": {
-    "name": "Kazakh Literature",
-    "necessary": true,
-    "lessons_per_week": 2,
-    "rigor": "Regular"
+  "Math": {
+    "lessons_per_week": 8,
+    "necessary": true
   },
-
-  "Kaz": {
-    "name": "Kazakh Language",
-    "necessary": true,
+  "GP": {
     "lessons_per_week": 1,
-    "rigor": "Regular"
+    "necessary": true
   },
-
   "Kaz L&L": {
-    "name": "Kazakh Language and Literature",
-    "necessary": true,
     "lessons_per_week": 2,
-    "rigor": "Regular"
+    "necessary": true
   },
-
-  "Rus L&L": {
-    "name": "Russian Language and Literature",
-    "necessary": true,
-    "lessons_per_week": 2,
-    "rigor": "Regular"
-  },
-
-  "RuLit": {
-    "necessary": true,
-    "lessons_per_week": 2,
-    "rigor": "Regular"
-  },
-
   "Rus": {
-    "name": "Russian Language",
-    "necessary": true,
     "lessons_per_week": 1,
-    "rigor": "Regular"
+    "necessary": true
   },
-
-  "CCircle": {
-    "necessary": false
+  "Engr": {
+    "lessons_per_week": 2,
+    "necessary": true
   },
-
-  "PE": {
-    "necessary": false
+  "RuLit": {
+    "lessons_per_week": 2,
+    "necessary": true
+  },
+  "ESL": {
+    "lessons_per_week": 5,
+    "necessary": true
   }
-
 }
