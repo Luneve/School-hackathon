@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}EduPage Dashboard - GOV.UK Style{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="govuk-template__body">
+    <header class="govuk-header" role="banner">
+        <div class="govuk-header__container">
+            <a href="/" class="govuk-header__logotype">
+                GOV.UK EduPage
+            </a>
+        </div>
+    </header>
+
+    <div class="govuk-width-container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    {% if category == 'error' %}{% set kind = 'error' %}
+                    {% elif category == 'success' %}{% set kind = 'success' %}
+                    {% else %}{% set kind = 'info' %}{% endif %}
+                    <div class="govuk-flash govuk-flash--{{ kind }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <main class="govuk-main-wrapper" id="main-content" role="main">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+</body>
+</html>

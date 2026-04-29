@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Sign in - GOV.UK EduPage{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Sign in to EduPage Dashboard</h1>
+
+<p class="govuk-body">Use your EduPage credentials to view your academic record and GPA reports.</p>
+
+<form action="/login" method="post" style="max-width: 400px; margin-top: 30px;">
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="username">Username (e.g. a.almenov26)</label>
+        <input class="govuk-input" id="username" name="username" type="text" required>
+    </div>
+
+    <div class="govuk-form-group">
+        <label class="govuk-label" for="password">Password</label>
+        <input class="govuk-input" id="password" name="password" type="password" required>
+    </div>
+
+    <button type="submit" class="govuk-button">Sign in</button>
+</form>
+{% endblock %}

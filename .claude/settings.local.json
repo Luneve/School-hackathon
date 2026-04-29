@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Set-Location e:\\\\api-test; Get-ChildItem -Name | Where-Object { $_ -match 'env|venv|requirements' })"
+    ]
+  }
+}

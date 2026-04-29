@@ -1,19 +1,17 @@
 from src.config import CATEGORY_MAP, WEIGHTS, SCALES
+from src.models import Grade, YearData
 
 
-def calculate_subject_gpa(subject_grades: list) -> dict:
+def calculate_subject_gpa(subject_grades: list[Grade]) -> dict:
     totals = {cat: {"score": 0.0, "weight": 0.0} for cat in WEIGHTS}
 
     for grade in subject_grades:
-        cat = CATEGORY_MAP.get(str(grade.get("category_id")))
+        cat = CATEGORY_MAP.get(str(grade.category_id))
         if cat is None:
             continue
 
-        try:
-            importance = float(grade.get("importance", 1))
-            percent = float(grade.get("percent", 0))
-        except (TypeError, ValueError):
-            continue
+        importance = grade.importance
+        percent = grade.percent
 
         totals[cat]["score"] += percent * importance
         totals[cat]["weight"] += importance
@@ -34,16 +32,15 @@ def calculate_final_grade(cats: dict) -> float | None:
     return round(sum(cats[cat] * weights[cat] for cat in cats) / total_weight, 2)
 
 
-def calculate_annual_percent(grades) -> dict:
-    grades = grades
+def calculate_annual_percent(year_data: YearData) -> dict:
     result = {}
 
-    for semester, sem_key in (("semester-1", "sem1"), ("semester-2", "sem2")):
-        sem_data = grades.get(semester, {})
-        if not sem_data.get("available", False):
+    for semester_name, sem_key in (("semester-1", "sem1"), ("semester-2", "sem2")):
+        sem_data = year_data.semesters.get(semester_name)
+        if not sem_data or not sem_data.available:
             continue
 
-        for subject, subject_grades in sem_data.get("grades", {}).items():
+        for subject, subject_grades in sem_data.grades.items():
             final = calculate_final_grade(calculate_subject_gpa(subject_grades))
             result.setdefault(subject, {})[sem_key] = final
 
@@ -64,22 +61,36 @@ def percent_to_scale(percent: float) -> tuple[str, float]:
     return "F", 0.0
 
 
+def gpa_to_letter(gpa: float) -> str:
+    """Map a 4.0-scale GPA to the closest letter grade.
+
+    SCALES is sorted from highest threshold to lowest, so the first entry
+    whose gpa value is <= the given gpa is the best match.
+    """
+    for _, letter, scale_gpa in SCALES:
+        if gpa >= scale_gpa:
+            return letter
+    return "F"
+
+
 def _calculate_weighted_points(annual_grades: dict, metadata: dict) -> tuple[float, int]:
     result = 0.0
     overall_lessons = 0
 
     for subject, subject_grades in annual_grades.items():
-        percent = subject_grades.get("annual", 0)
-        _, scale = percent_to_scale(percent)
+        percent = subject_grades.get("annual")
+        if percent is None:
+            continue  # NOT_STARTED — skip entirely
 
         subject_meta = metadata.get(subject)
-        if not subject_meta or scale == 0.0 or subject_meta.get("necessary") is False:
+        if not subject_meta or subject_meta.get("necessary") is False:
             continue
 
         lessons_per_week = int(subject_meta.get("lessons_per_week", 0))
         if lessons_per_week <= 0:
             continue
 
+        _, scale = percent_to_scale(percent)
         overall_lessons += lessons_per_week
         result += scale * lessons_per_week
 

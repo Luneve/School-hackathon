@@ -1,4 +1,5 @@
 import datetime
+from typing import Any
 
 
 def get_graduation_year(email: str) -> int:
@@ -20,3 +21,11 @@ def get_grade_range(graduation_year: int, current_year: int) -> list[int]:
 def get_grade_for_year(graduation_year: int, year: int) -> int:
     starting_year = graduation_year - 4
     return 8 + (year - starting_year)
+
+
+def safe_float(value: Any, default: float = 0.0) -> float:
+    """Safely coerce a value to float, returning default on failure."""
+    try:
+        return float(value) if value is not None else default
+    except (TypeError, ValueError):
+        return default

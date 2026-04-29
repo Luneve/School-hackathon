@@ -1,0 +1,415 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% macro fmt_pct(value) -%}
+    {%- if value is none or value == "" %}—{%- else %}{{ '%.1f'|format(value) }}%{%- endif %}
+{%- endmacro %}
+
+{% macro distinction(gpa) -%}
+    {%- if gpa >= 3.9 %}Summa Cum Laude
+    {%- elif gpa >= 3.7 %}Magna Cum Laude
+    {%- elif gpa >= 3.5 %}Cum Laude
+    {%- endif %}
+{%- endmacro %}
+
+{% block content %}
+
+{# ── Header ── #}
+<div class="dashboard-header">
+    <h1 class="govuk-heading-xl" style="margin-bottom:0;">Academic Dashboard</h1>
+    <div class="dashboard-header__actions">
+        <a href="/sync/log" class="govuk-link" style="margin-right:10px;">Sync log</a>
+        <a href="/transcript/pdf" class="govuk-link" style="margin-right:15px;">Export PDF</a>
+        <a href="/logout" class="govuk-link" style="margin-right:15px;">Sign out</a>
+        <form action="/sync" method="post" class="dashboard-sync-form">
+            <input class="govuk-input" name="password" type="password"
+                   placeholder="Password" required style="width:170px;margin-bottom:0;">
+            <button type="submit" class="govuk-button govuk-button--secondary"
+                    style="margin-bottom:0;">Sync EduPage</button>
+        </form>
+    </div>
+</div>
+
+<p class="govuk-body">
+    Welcome back, <strong>{{ friendly_name }}</strong>.
+    {% if last_synced %}
+        <span class="govuk-secondary-text">Last synced {{ last_synced.strftime('%Y-%m-%d %H:%M') }} UTC.</span>
+    {% else %}
+        <span class="govuk-secondary-text">No sync recorded yet.</span>
+    {% endif %}
+</p>
+
+{# ── Overall GPA card ── #}
+<div class="govuk-summary-card" style="margin-bottom:30px;">
+    <div class="govuk-summary-card__title-wrapper">
+        <h3 class="govuk-summary-card__title">Cumulative GPA</h3>
+    </div>
+    <div style="padding:20px;display:flex;gap:40px;flex-wrap:wrap;align-items:center;">
+        <div>
+            <div style="font-size:48px;font-weight:700;line-height:1;">
+                {{ report.overall_gpa }} <span style="font-size:24px;color:#505a5f;">/ 4.0</span>
+            </div>
+            <div style="margin-top:6px;">
+                <span class="govuk-tag govuk-tag--blue" style="font-size:16px;">
+                    {{ report.overall_letter }}
+                </span>
+                {% set dist = distinction(report.overall_gpa) %}
+                {% if dist %}
+                <span style="font-style:italic;color:#505a5f;margin-left:10px;font-size:18px;">{{ dist }}</span>
+                {% endif %}
+            </div>
+        </div>
+        {% if at_risk_count %}
+        <div class="at-risk-summary">
+            ⚠ <strong>{{ at_risk_count }}</strong> subject{{ 's' if at_risk_count != 1 }} at risk (GPA &lt; 3.0)
+        </div>
+        {% endif %}
+        <div style="margin-left:auto;">
+            <div style="font-size:14px;text-transform:uppercase;letter-spacing:1px;color:#505a5f;">Year GPAs</div>
+            {% for yr in report.years %}
+            <div style="font-size:16px;">
+                Gr {{ yr.grade_level }} ({{ yr.year }}):
+                <strong>{{ yr.gpa }}</strong>
+                <span class="govuk-tag govuk-tag--blue" style="font-size:12px;padding:3px 6px;">{{ yr.letter }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{# ── Reverse GPA calculator ── #}
+<details class="whatif-block" style="margin-bottom:20px;">
+    <summary class="whatif-summary">Reverse GPA calculator — "What score do I need?"</summary>
+    <div style="padding:15px 0;">
+        <form action="/whatif/reverse" method="post" style="display:flex;gap:15px;align-items:flex-end;flex-wrap:wrap;">
+            <div class="govuk-form-group" style="margin-bottom:0;">
+                <label class="govuk-label" for="target-gpa">Target cumulative GPA (0.0–4.0)</label>
+                <input class="govuk-input" id="target-gpa" name="target_gpa" type="number"
+                       step="0.01" min="0" max="4" style="width:120px;" required>
+            </div>
+            <button type="submit" class="govuk-button" style="margin-bottom:0;">Calculate</button>
+        </form>
+        {% if reverse_result %}
+        <div class="reverse-result-card">
+            <p class="govuk-body" style="margin-bottom:6px;">
+                To reach <strong>{{ reverse_result.target_gpa }}</strong> cumulative GPA,
+                you need to average
+                <strong>{{ reverse_result.required_letter }}</strong>
+                (<strong>{{ reverse_result.required_gpa_points }}</strong> / 4.0)
+                across your remaining subjects
+                ({{ reverse_result.variable_subjects }} weighted lessons).
+            </p>
+        </div>
+        {% endif %}
+    </div>
+</details>
+
+{# ── Prediction preview ── #}
+{% if prediction %}
+<div class="govuk-summary-card govuk-prediction-card" style="margin-bottom:20px;">
+    <div class="govuk-summary-card__title-wrapper">
+        <h3 class="govuk-summary-card__title">Prediction preview</h3>
+    </div>
+    <div style="padding:15px;">
+        <p class="govuk-body" style="margin-bottom:12px;">
+            Hypothetical: <strong>{{ prediction.form.subject }}</strong>,
+            term {{ prediction.form.term }},
+            {{ prediction.form.category_label }}
+            (&times;{{ '%.1f'|format(prediction.form.importance) }})
+            at <strong>{{ '%.1f'|format(prediction.form.percent) }}%</strong>
+        </p>
+        <div class="prediction-grid">
+            <div class="prediction-cell">
+                <span class="prediction-label">Baseline</span>
+                <span class="prediction-value">{{ prediction.baseline_overall }} / 4.0</span>
+            </div>
+            <div class="prediction-cell">
+                <span class="prediction-label">Scenario</span>
+                <span class="prediction-value">{{ prediction.scenario_overall }} / 4.0</span>
+            </div>
+            <div class="prediction-cell">
+                <span class="prediction-label">Delta</span>
+                <span class="prediction-value
+                    {% if prediction.delta > 0 %}prediction-delta--up
+                    {% elif prediction.delta < 0 %}prediction-delta--down{% endif %}">
+                    {{ '+' if prediction.delta > 0 else '' }}{{ prediction.delta }}
+                </span>
+            </div>
+        </div>
+        <p class="govuk-secondary-text" style="font-size:15px;margin-top:10px;">
+            Preview only — not saved.
+        </p>
+    </div>
+</div>
+{% endif %}
+
+{# ── Year cards ── #}
+<h2 class="govuk-heading-l">Academic Record</h2>
+
+{% for yr in report.years %}
+<details class="year-card" {% if yr.is_current %}open{% endif %}>
+    <summary class="year-card__header">
+        <span class="year-card__title">
+            Grade {{ yr.grade_level }}
+            <span class="year-card__period">{{ yr.year }}/{{ (yr.year + 1) % 100 | string | int }}</span>
+        </span>
+        <span class="year-card__meta">
+            {% if yr.has_meta %}
+                GPA <strong>{{ yr.gpa }}</strong>
+                <span class="govuk-tag govuk-tag--blue" style="font-size:12px;padding:3px 6px;">{{ yr.letter }}</span>
+                {% set dist = distinction(yr.gpa) %}
+                {% if dist %}<em style="font-weight:400;font-style:italic;font-size:15px;color:#505a5f;"> {{ dist }}</em>{% endif %}
+            {% else %}
+                <span style="color:#d4351c;font-size:14px;">⚠ Set lessons/week to enable GPA</span>
+            {% endif %}
+            {% set yr_at_risk = yr.subjects | selectattr("at_risk") | list | length %}
+            {% if yr_at_risk %}
+            <span class="at-risk-badge">⚠ {{ yr_at_risk }} at risk</span>
+            {% endif %}
+        </span>
+    </summary>
+
+    <div class="year-card__body">
+        {# Subject table #}
+        {% if yr.subjects %}
+        <table class="govuk-table">
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header">Subject</th>
+                    <th class="govuk-table__header">Sem 1</th>
+                    <th class="govuk-table__header">Sem 2</th>
+                    <th class="govuk-table__header">Annual</th>
+                    <th class="govuk-table__header">Grade</th>
+                    <th class="govuk-table__header">GPA pts</th>
+                    <th class="govuk-table__header">LPW</th>
+                    <th class="govuk-table__header">FA / SA / MID</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                {% for s in yr.subjects %}
+                <tr class="govuk-table__row {% if s.at_risk %}row--at-risk{% endif %}">
+                    <td class="govuk-table__cell">
+                        {% if s.at_risk %}<span class="at-risk-inline">⚠</span>{% endif %}
+                        <strong>{{ s.subject }}</strong>
+                        {% if not s.include_in_gpa %}
+                        <span class="govuk-tag govuk-tag--grey" style="font-size:11px;padding:2px 5px;">Pass</span>
+                        {% endif %}
+                    </td>
+                    <td class="govuk-table__cell">{{ fmt_pct(s.sem1) }}</td>
+                    <td class="govuk-table__cell">{{ fmt_pct(s.sem2) }}</td>
+                    <td class="govuk-table__cell">{{ fmt_pct(s.annual) }}</td>
+                    <td class="govuk-table__cell"><strong>{{ s.letter }}</strong></td>
+                    <td class="govuk-table__cell">{{ s.gpa if s.annual is not none else '—' }}</td>
+                    <td class="govuk-table__cell">
+                        {% if s.lessons_per_week > 0 %}{{ s.lessons_per_week }}{% else %}<span style="color:#d4351c;">!</span>{% endif %}
+                    </td>
+                    <td class="govuk-table__cell" style="font-size:14px;color:#505a5f;">
+                        {% set parts = [] %}
+                        {% if 'FA' in s.breakdown %}{% set _ = parts.append('FA ' ~ '%.1f'|format(s.breakdown['FA'])) %}{% endif %}
+                        {% if 'SA' in s.breakdown %}{% set _ = parts.append('SA ' ~ '%.1f'|format(s.breakdown['SA'])) %}{% endif %}
+                        {% if 'MID' in s.breakdown %}{% set _ = parts.append('MID ' ~ '%.1f'|format(s.breakdown['MID'])) %}{% endif %}
+                        {{ parts|join(' · ') if parts else '—' }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="govuk-body govuk-secondary-text">No grade data for this year yet. Sync with EduPage.</p>
+        {% endif %}
+
+        {# Edit subjects panel #}
+        <details class="edit-panel">
+            <summary class="edit-panel__summary">Edit subjects &amp; lessons/week for {{ yr.year }}</summary>
+            <div class="edit-panel__body">
+                {# Hidden form element — inputs reference it via form="edit-year-N" so
+                   delete buttons can sit inline without nesting forms. #}
+                <form id="edit-year-{{ yr.year }}"
+                      action="/subject/{{ yr.year }}/save_all"
+                      method="post"></form>
+
+                {% for s in yr.subjects %}
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;">
+                    {# Subject name sent as parallel list #}
+                    <input type="hidden" name="subjects" value="{{ s.subject }}"
+                           form="edit-year-{{ yr.year }}">
+                    <span class="edit-row-label">{{ s.subject }}</span>
+                    <label class="edit-row-field-label">LPW</label>
+                    <input class="govuk-input edit-row-input" name="lpw_{{ loop.index0 }}"
+                           type="number" min="0" max="20" value="{{ s.lessons_per_week }}"
+                           style="width:60px;" form="edit-year-{{ yr.year }}">
+                    <label class="edit-row-field-label">
+                        <input type="checkbox" name="include_{{ loop.index0 }}" value="1"
+                               {% if s.include_in_gpa %}checked{% endif %}
+                               form="edit-year-{{ yr.year }}">
+                        Include in GPA
+                    </label>
+                    {# Delete — standalone form, no nesting #}
+                    <form action="/subject/{{ yr.year }}/delete" method="post">
+                        <input type="hidden" name="subject" value="{{ s.subject }}">
+                        <button type="submit" class="govuk-button govuk-button--warning"
+                                style="margin-bottom:0;padding:4px 8px;font-size:14px;">✕ Remove</button>
+                    </form>
+                </div>
+                {% endfor %}
+
+                <button type="submit" form="edit-year-{{ yr.year }}"
+                        class="govuk-button" style="margin-top:10px;">
+                    Save all for {{ yr.year }}
+                </button>
+
+                {# Add new subject — separate small form #}
+                <div style="margin-top:12px;border-top:1px solid #b1b4b6;padding-top:12px;">
+                    <form action="/subject/{{ yr.year }}/edit" method="post" class="edit-row-form">
+                        <span class="edit-row-label" style="font-weight:400;font-style:italic;">Add subject</span>
+                        <input class="govuk-input" name="subject" type="text"
+                               placeholder="Subject name" style="width:180px;" required>
+                        <label class="edit-row-field-label">LPW</label>
+                        <input class="govuk-input edit-row-input" name="lessons_per_week"
+                               type="number" min="1" max="20" value="1" style="width:60px;">
+                        <label class="edit-row-field-label">
+                            <input type="checkbox" name="include_in_gpa" value="1" checked>
+                            Include in GPA
+                        </label>
+                        <button type="submit" class="govuk-button"
+                                style="margin-bottom:0;padding:4px 10px;font-size:15px;">Add</button>
+                    </form>
+                </div>
+            </div>
+        </details>
+
+        {# What-if & manual grades — current year only #}
+        {% if yr.is_current %}
+
+        {% if manual_grades %}
+        <h4 class="govuk-heading-s" style="margin-top:20px;">Manual predictions</h4>
+        <table class="govuk-table">
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header">Sem</th>
+                    <th class="govuk-table__header">Subject</th>
+                    <th class="govuk-table__header">Category</th>
+                    <th class="govuk-table__header">Percent</th>
+                    <th class="govuk-table__header">Importance</th>
+                    <th class="govuk-table__header"></th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                {% for m in manual_grades %}
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">{{ m.semester }}</td>
+                    <td class="govuk-table__cell"><strong>{{ m.subject }}</strong></td>
+                    <td class="govuk-table__cell">{{ category_label_map.get(m.category_id, m.category_id) }}</td>
+                    <td class="govuk-table__cell">{{ '%.1f'|format(m.percent) }}%</td>
+                    <td class="govuk-table__cell">&times;{{ '%.1f'|format(m.importance) }}</td>
+                    <td class="govuk-table__cell">
+                        <form action="/manual/{{ m.id }}/delete" method="post" style="margin:0;">
+                            <button type="submit" class="govuk-button govuk-button--warning"
+                                    style="margin-bottom:0;padding:4px 8px;font-size:14px;">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        <div class="add-prediction-block">
+            <h4 class="govuk-heading-s">Add what-if assessment</h4>
+            <p class="govuk-body" style="font-size:17px;">
+                <strong>Preview</strong> shows GPA impact without saving;
+                <strong>Save</strong> writes it permanently.
+            </p>
+            <form id="prediction-form" method="post" style="max-width:480px;">
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="subject-input">Subject</label>
+                    <input class="govuk-input" id="subject-input" name="subject" type="text"
+                           list="subjects-datalist" autocomplete="off" required>
+                    <datalist id="subjects-datalist">
+                        {% for s in subjects_list %}<option value="{{ s }}">{% endfor %}
+                    </datalist>
+                </div>
+                <div style="display:flex;gap:15px;flex-wrap:wrap;">
+                    <div class="govuk-form-group" style="flex:0 0 80px;">
+                        <label class="govuk-label" for="term-input">Term</label>
+                        <input class="govuk-input" id="term-input" name="term" type="number" min="1" max="2" value="2" required>
+                    </div>
+                    <div class="govuk-form-group" style="flex:1;">
+                        <label class="govuk-label" for="category-select">Category</label>
+                        <select class="govuk-select" name="category" id="category-select" required
+                                onchange="document.getElementById('mid-type-group').style.display = this.value==='3' ? 'block':'none';">
+                            <option value="1">FA — Formative</option>
+                            <option value="2">SA — Summative</option>
+                            <option value="3">MID</option>
+                        </select>
+                    </div>
+                    <div class="govuk-form-group" style="flex:0 0 120px;">
+                        <label class="govuk-label" for="percent-input">Percent</label>
+                        <input class="govuk-input" id="percent-input" name="percent" type="number"
+                               step="0.1" min="0" max="100" required>
+                    </div>
+                </div>
+                <div class="govuk-form-group" id="mid-type-group" style="display:none;">
+                    <label class="govuk-label" for="mid-type-select">MID type</label>
+                    <select class="govuk-select" id="mid-type-select" name="mid_type">
+                        <option value="1">Midterm (×1.0)</option>
+                        <option value="2">Final exam (×2.0)</option>
+                    </select>
+                </div>
+                <div class="prediction-actions">
+                    <button type="submit" formaction="/predict" class="govuk-button govuk-button--secondary">Preview</button>
+                    <button type="submit" formaction="/add_manual" class="govuk-button">Save</button>
+                </div>
+            </form>
+        </div>
+
+        {% endif %}{# is_current #}
+    </div>
+</details>
+{% endfor %}
+
+{# ── External years ── #}
+{% if external_gpas %}
+<h2 class="govuk-heading-l" style="margin-top:30px;">External Years</h2>
+{% for academic_year, ext in external_gpas.items() %}
+<div class="year-card" style="display:flex;align-items:center;justify-content:space-between;padding:15px;">
+    <div>
+        <strong>{{ ext.label if ext.label else academic_year ~ '/' ~ ((academic_year+1)|string|slice(2)|join) }}</strong>
+        <span style="margin-left:15px;font-size:18px;">GPA: <strong>{{ ext.gpa_points }}</strong></span>
+        <span class="govuk-tag govuk-tag--blue" style="margin-left:8px;font-size:12px;">manual</span>
+    </div>
+    <form action="/external-year/{{ academic_year }}/delete" method="post">
+        <button type="submit" class="govuk-button govuk-button--warning"
+                style="margin-bottom:0;padding:4px 8px;font-size:14px;">Remove</button>
+    </form>
+</div>
+{% endfor %}
+{% endif %}
+
+{# ── Add external year ── #}
+<details class="whatif-block" style="margin-top:20px;">
+    <summary class="whatif-summary">Add external year GPA (before grade 8)</summary>
+    <div style="padding:15px 0;">
+        <form action="/external-year/save" method="post"
+              style="display:flex;gap:15px;align-items:flex-end;flex-wrap:wrap;">
+            <div class="govuk-form-group" style="margin-bottom:0;">
+                <label class="govuk-label" for="ext-year">Academic year (start year)</label>
+                <input class="govuk-input" id="ext-year" name="academic_year" type="number"
+                       min="2010" max="2030" style="width:100px;" required>
+            </div>
+            <div class="govuk-form-group" style="margin-bottom:0;">
+                <label class="govuk-label" for="ext-gpa">GPA (0.0–4.0)</label>
+                <input class="govuk-input" id="ext-gpa" name="gpa_points" type="number"
+                       step="0.01" min="0" max="4" style="width:90px;" required>
+            </div>
+            <div class="govuk-form-group" style="margin-bottom:0;">
+                <label class="govuk-label" for="ext-label">Label (optional)</label>
+                <input class="govuk-input" id="ext-label" name="label" type="text"
+                       placeholder="e.g. Grade 7" style="width:160px;">
+            </div>
+            <button type="submit" class="govuk-button" style="margin-bottom:0;">Save</button>
+        </form>
+    </div>
+</details>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Sync Log{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Sync Log</h1>
+<p class="govuk-body">
+    <a href="/dashboard" class="govuk-link">← Back to dashboard</a>
+</p>
+
+{% if not logs %}
+<p class="govuk-body govuk-secondary-text">No sync history yet. Sync with EduPage to populate this log.</p>
+{% else %}
+
+{% for log in logs %}
+{% set c = log.changes %}
+{% set total = (c.added|length) + (c.updated|length) + (c.removed|length) %}
+<div class="govuk-summary-card" style="margin-bottom:15px;">
+    <div class="govuk-summary-card__title-wrapper" style="display:flex;justify-content:space-between;align-items:center;">
+        <h3 class="govuk-summary-card__title">
+            {{ log.synced_at.strftime('%Y-%m-%d %H:%M') }} UTC —
+            Year {{ log.academic_year }}, Semester {{ log.semester }}
+        </h3>
+        <span style="font-size:15px;color:#505a5f;">
+            {% if total == 0 %}No changes{% else %}{{ total }} change{{ 's' if total != 1 }}{% endif %}
+        </span>
+    </div>
+    {% if total > 0 %}
+    <div style="padding:15px;">
+        {% if c.added %}
+        <div style="margin-bottom:10px;">
+            <strong style="color:#00703c;">Added ({{ c.added|length }})</strong>
+            <ul style="margin:4px 0 0 20px;font-size:16px;">
+                {% for item in c.added %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% if c.updated %}
+        <div style="margin-bottom:10px;">
+            <strong style="color:#1d70b8;">Updated ({{ c.updated|length }})</strong>
+            <ul style="margin:4px 0 0 20px;font-size:16px;">
+                {% for item in c.updated %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% if c.removed %}
+        <div>
+            <strong style="color:#d4351c;">Removed ({{ c.removed|length }})</strong>
+            <ul style="margin:4px 0 0 20px;font-size:16px;">
+                {% for item in c.removed %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}
