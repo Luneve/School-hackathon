@@ -1,0 +1,54 @@
+{
+  "Kaz L&L": {
+    "lessons_per_week": 5,
+    "necessary": true
+  },
+  "Chem": {
+    "lessons_per_week": 4,
+    "necessary": true
+  },
+  "Bio": {
+    "lessons_per_week": 2,
+    "necessary": true
+  },
+  "Math": {
+    "lessons_per_week": 11,
+    "necessary": true
+  },
+  "Phy": {
+    "lessons_per_week": 9,
+    "necessary": true
+  },
+  "Kaz Hist": {
+    "lessons_per_week": 3,
+    "necessary": true
+  },
+  "Geo": {
+    "lessons_per_week": 1,
+    "necessary": true
+  },
+  "Wo Hist": {
+    "lessons_per_week": 1,
+    "necessary": true
+  },
+  "CS": {
+    "lessons_per_week": 2,
+    "necessary": true
+  },
+  "Rus": {
+    "lessons_per_week": 2,
+    "necessary": true
+  },
+  "Engr": {
+    "lessons_per_week": 2,
+    "necessary": true
+  },
+  "RuLit": {
+    "lessons_per_week": 3,
+    "necessary": true
+  },
+  "ESL": {
+    "lessons_per_week": 9,
+    "necessary": true
+  }
+}
