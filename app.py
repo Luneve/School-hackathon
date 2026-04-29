@@ -10,7 +10,7 @@ from flask import (
     flash,
     Response,
 )
-from src.edu_api import login as edupage_login
+from src.edu_api import login as edupage_login, get_all_semesters_data
 from src.utils import get_current_year, get_graduation_year, get_grade_for_year, get_grade_range
 from main import (
     calculate_student_gpa_report,
@@ -22,6 +22,7 @@ from main import (
 )
 from src.cache import (
     load_student_cache,
+    save_student_cache,
     add_manual_grade_to_db,
     delete_manual_grade,
     get_manual_grades,
@@ -198,8 +199,12 @@ def sync():
     edu_session = edupage_login(username, password)
     if edu_session:
         try:
-            update_current_year_grades(edu_session, username)
-            flash("Synced with EduPage. Timetable updated. Manual overrides preserved.", "success")
+            student_id = username.split("@")[0]
+            graduation_year = get_graduation_year(username)
+            grade_range = get_grade_range(graduation_year, get_current_year())
+            for year in grade_range:
+                save_student_cache(student_id, year, get_all_semesters_data(edu_session, year))
+            flash(f"Synced {len(grade_range)} year(s) from EduPage.", "success")
         except Exception as e:
             flash(f"Sync error: {e}", "error")
     else:
